@@ -30,7 +30,7 @@ summarylength = 25
 
 # Site Params
 [params]
-  logo = "images/logo.png"
+  logo = "images/logo_roughcrop.jpg"
   logo_footer = "images/logo-footer.png"
   favicon_icon = "images/favicon.ico"
   favicon_shortcut_icon = "images/favicon.png"
@@ -70,9 +70,9 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We’re a Design Studio That Belies In the Great Ideas"
-    tagline               = "WE WORK HARD, WE PLAY HARD"
+    background_image      = "images/backgrounds/citycircuit.png"
+    heading               = "Mechanical Automation and Design Firm"
+    tagline               = "Let the machines do the work. Reclaim your time and money."
     primary_button        = "See Our Works"
     primary_button_url    = "portfolio"
     secondary_button      = "Connect with Us"
@@ -103,20 +103,20 @@ summarylength = 25
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "409-896-1444"
-      email   = "info@roxo.co"
+      address = "Manchester, New Hampshire"
+      phone   = "email for phone"
+      email   = "milohooper<[at]>proton(<.>)me"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
         [[params.footer.sitemap.link]]
-          name = "About Company"
+          name = "About Auridium Technologies"
           url  = "about"
         [[params.footer.sitemap.link]]
-          name = "Projects"
-          url  = "portfolio"
+          name = "Milo's Site"
+          url  = "https://milohooper.com"
         [[params.footer.sitemap.link]]
-          name = "Blog"
+          name = "Auridium Blog"
           url  = "blog"
         [[params.footer.sitemap.link]]
           name = "Contact"
@@ -125,20 +125,11 @@ summarylength = 25
       [params.footer.social]
         title   = "Social Media"
         [[params.footer.social.link]]
-          name = "Medium"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Behance"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Dribbble"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Instagram"
-          url  = "#"
+          name = "LinkedIn"
+          url  = "https://linkedin.com/company/auridium-technologies-llc"
       # Footer Service
       [params.footer.service]
-        title       = "We help brands:"
-        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
+        title       = "We help companies:"
+        description = "develop automated manufacturing processes<br>design fixtures, toling, and machines<br>save money by reducing inconsistencies and downtime"
       [params.footer.back_to_top]
         description = "I want to <br> visit again"
