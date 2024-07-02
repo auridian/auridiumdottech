@@ -2,20 +2,16 @@
 title: "Hello World!"
 date: 2024-07-02T13:40:00+06:00
 image: images/blog/blog-post-01.jpg
-feature_image: images/blog/blog-details-image.jpg
+feature-image: images/blog/blog-details-image.jpg
 author: Milo J. Hooper
 ---
 ### The start of a new era
 
-Black Lines wants it to be as easy to serve a Negroni as it is a pint of lager. The drinks company is seeking to revolutionise the bar experience by serving cocktails by draught with a changing menu of drinks (as well as same favourite stand-bys). A pink grapefruit spritz was served through the summer while a new pear and white tea fizz joins the line-up for winter.
+Long awaited, this is the public announcement of the opening of my new company, Auridium Technologies LLC. This will serve as my umbrella organization for various mechanical design consulting activities as well as any software or hardware products I launch (I have a few ideas in particular I want to fit into downtime within the next six months).
 
+Feel free to check out the various services offered under the "About" tab in the main nav, and if you happen to have (or know someone who has) an intersting project that needs some mechanical support, please reach out!
+#### Meta notes about how this website was put together
 
-
-
-![blog-details-image-02](https://user-images.githubusercontent.com/16266381/71399826-2009b380-264f-11ea-9bc3-59d7fa9a9994.jpg)
-
-
-> "The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring."
-
+This site and the revamp of my personal site (link in main nav above) are both now hosted on Cloudflare Pages instead of Github Pages, and I've moved to using Hugo instead of Jekyll for static content generation. Though there was a bit of a learning curve in the adjustment, overall this combination seems to be quite functional and inducing of minimal headaches. I generated the current company logo using Venice.ai and most other graphics on this site are public domain. 
 
 

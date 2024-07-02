@@ -1,6 +1,6 @@
 .site-contact{
   padding: 150px 0 100px;
-  background: #ccc;
+  background: #aaa;
   @include mobile{
     padding: 120px 0 100px;
   }
@@ -17,6 +17,7 @@
     margin-top: 20px;
     h4{
       font-weight: 300;
+      color:text-color-dark;
       text-transform: uppercase;
       margin-bottom: 50px;
       letter-spacing: 3px;
@@ -32,7 +33,7 @@
 .contact-form-generator {
   margin-top: 20px;
     a{
-    color: $text-color;
+    color: $text-color-dark;
     font-size: 13px;
     text-transform: uppercase;
     margin-bottom: 50px;
