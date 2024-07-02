@@ -31,35 +31,18 @@ summarylength = 25
 # Site Params
 [params]
   logo = "images/logo_roughcrop.jpg"
-  logo_footer = "images/logo-footer.png"
+  logo_footer = "images/thumb.logo.jpg"
   favicon_icon = "images/favicon.ico"
   favicon_shortcut_icon = "images/favicon.png"
   custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
+  description = "Auridium Technologies LLC. July 2024."
+  author = "Milo J. Hooper"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
-  # We're using formspree.io for form handling, paste your formspree url below
-  fabform  = "https://fabform.io/f/USAg2Jl"
 
-  # Contact Form
-  [params.contactForm]
-    placeholder_first_name        = "First Name"
-    placeholder_last_name         = "Last Name"
-    placeholder_email             = "Email"
-    placeholder_project_type      = "Project Type"
-    placeholder_about_the_project = "About the Project"
-    send_message                  = "Send Message"
 
-    [[params.contactForm.projectType]]
-      value = "gd"
-      title  = "Graphics Design"
-    [[params.contactForm.projectType]]
-      value = "wd"
-      title  = "Web Design"
-  
   # Navbar Action Button
   [params.navAction]
     status  = true
@@ -70,19 +53,19 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/citycircuit.png"
+    background_image      = "images/backgrounds/blue-gradient-background.jpg"
     heading               = "Mechanical Automation and Design Firm"
     tagline               = "Let the machines do the work. Reclaim your time and money."
-    primary_button        = "See Our Works"
-    primary_button_url    = "portfolio"
-    secondary_button      = "Connect with Us"
+    primary_button        = "See Services"
+    primary_button_url    = "about"
+    secondary_button      = "Let's Connect"
     secondary_button_url  = "contact"
 
   [params.blog]
     read_more             = "read more"
 
   [params.portfolio]
-    enable    = true
+    enable    = false
     title     = "OUR RECENT WORKS"
     subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
     view_project = "view project"
@@ -90,7 +73,7 @@ summarylength = 25
     scroll_down = "scroll down"
 
   [params.call_to_action]
-    enable              = true
+    enable              = false
     background_image    = "images/backgrounds/cta-background.jpg"
     title               = "LET’S WORK TOGETHER"
     primary_button      = "Submit Query"
@@ -110,7 +93,7 @@ summarylength = 25
       [params.footer.sitemap]
         title   = "Sitemap"
         [[params.footer.sitemap.link]]
-          name = "About Auridium Technologies"
+          name = "About Auridium Technologies LLC"
           url  = "about"
         [[params.footer.sitemap.link]]
           name = "Milo's Site"
@@ -130,6 +113,6 @@ summarylength = 25
       # Footer Service
       [params.footer.service]
         title       = "We help companies:"
-        description = "develop automated manufacturing processes<br>design fixtures, toling, and machines<br>save money by reducing inconsistencies and downtime"
+        description = "develop automated manufacturing processes<br>design fixtures, tooling, and machines<br>save money by reducing inconsistencies and downtime"
       [params.footer.back_to_top]
-        description = "I want to <br> visit again"
+        description = "back to top"
