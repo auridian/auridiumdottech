@@ -1,7 +1,7 @@
 baseURL       = "https://auridium.tech/"
 languageCode  = "en-us"
 title         = "Auridium Technologies LLC"
-theme         = "roxo-hugo"
+theme         = "roxo-hugo-custom-local"
 summarylength = 25
 
 # Site Menus
