@@ -1,6 +1,6 @@
-baseURL       = "http://example.org/"
+baseURL       = "https://auridium.tech/"
 languageCode  = "en-us"
-title         = "Roxo | Creative Design Agency"
+title         = "Auridium Technologies LLC"
 theme         = "roxo-hugo"
 summarylength = 25
 
@@ -16,11 +16,11 @@ summarylength = 25
     url     = "about"
     weight  = 2
   [[menu.nav]]
-    name    = "Portfolio"
-    url     = "portfolio"
+    name    = "Milo's Site"
+    url     = "https://milohooper.com"
     weight  = 3
   [[menu.nav]]
-    name    = "Blog"
+    name    = "Auridium Blog"
     url     = "blog"
     weight  = 4
   [[menu.nav]]
