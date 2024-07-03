@@ -1,7 +1,7 @@
 ---
 title: "Hello World!"
 date: 2024-07-02T13:40:00+06:00
-image: images/blog/blog-post-01.jpg
+image: images/blog/preview.citycircuit.png
 feature-image: images/blog/blog-details-image.jpg
 author: Milo J. Hooper
 ---

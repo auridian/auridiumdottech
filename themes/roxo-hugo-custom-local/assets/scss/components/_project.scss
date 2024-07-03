@@ -12,7 +12,7 @@
     }
     &-content{
       position: absolute;
-      background: $gray;
+      background: #eee;
       width: 100%;
       padding: 45px 50px;
       bottom: 0;
@@ -30,7 +30,7 @@
       h3{
         margin-bottom: 0;
         a{
-          color: $text-color-dark;
+          color: $text-color;
           transition: 0.3s ease;
           &:hover{
             text-decoration: none;

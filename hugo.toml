@@ -54,7 +54,7 @@ summarylength = 25
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/blue-gradient-background.jpg"
-    heading               = "Mechanical Automation and Design Firm"
+    heading               = "Auridium Technologies LLC: Mechanical Automation and Design"
     tagline               = "Let the machines do the work. Reclaim your time and money."
     primary_button        = "See Services"
     primary_button_url    = "about"
