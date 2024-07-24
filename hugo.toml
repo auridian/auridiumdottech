@@ -87,8 +87,8 @@ summarylength = 25
     [params.footer.contactInfo]
       title   = "Contact Info"
       address = "Manchester, New Hampshire"
-      phone   = "email for phone"
-      email   = "milohooper<[at]>proton(<.>)me"
+      phone   = "707-684-6479"
+      email   = "hello(@)auridium.tech"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
