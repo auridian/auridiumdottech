@@ -16,6 +16,10 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 15px;
+    text-shadow: 0 0 5px $primary-color,
+                 0 0 10px $primary-color,
+                 0 0 20px $primary-color;
+    color: $primary-color;
     @include desktop{
       font-size: 40px;
     }
@@ -23,24 +27,22 @@ body {
   p{
     font-size: 20px;
     font-weight: 300;
+    color: $text-color-dark;
   }
 }
 
 .form-control{
-  background: transparent;
-  border-radius: 0;
+  background: rgba($body-color, 0.8);
+  border-radius: 4px;
   margin-bottom: 30px;
-  padding: 0 0 10px 0;
-  border-width: 0 0 1px 0;
-  border-color: $primary-color;
-  font-weight: 300;
-  letter-spacing: 1px;
-  -webkit-appearance: none;
-  height: 42px;
+  padding: 0.75rem;
+  border: 1px solid rgba($primary-color, 0.3);
+  color: $text-color;
+  transition: all 0.3s ease;
   &:focus{
-    box-shadow: none;
-    background: transparent;
-    border-color: $text-color;
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 10px rgba($primary-color, 0.3);
   }
 }
 
@@ -56,7 +58,7 @@ select.form-control{
     position: absolute;
     width: 16px;
     height: 10px;
-    background: url('../images/angle-down-select.svg');
+    background: url(../images/angle-down-select.svg);
     background-size: contain;
     background-repeat: no-repeat;
     right: 15px;

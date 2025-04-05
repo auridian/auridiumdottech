@@ -1,9 +1,11 @@
 .btn{
   font-family: $secondary-font;
   border: none;
-  color: $white !important;
+  color: $text-color !important;
   padding: 20px 45px;
-  border-radius: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
   &:focus{
     box-shadow: none;
   }
@@ -31,6 +33,7 @@
     }
   }
   &:hover{
+    transform: translateY(-2px);
     .btn-area{
       span{
         transform: translateY(-150%) skewY(7deg);
@@ -61,17 +64,19 @@
 }
 
 .btn-primary{
-  background: $primary-color;
-  color: $white;
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
+  color: $text-color;
   &:hover{
-    background: darken($color: $primary-color, $amount: 10);
+    background: linear-gradient(45deg, darken($primary-color, 10%), darken($secondary-color, 10%));
+    box-shadow: 0 0 15px rgba($primary-color, 0.5);
   }
 }
 
 .btn-secondary{
-  background: $secondary-color;
-  color: $white;
+  background: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
   &:hover{
-    background: darken($color: $secondary-color, $amount: 10);
+    background: rgba($primary-color, 0.1);
   }
 }

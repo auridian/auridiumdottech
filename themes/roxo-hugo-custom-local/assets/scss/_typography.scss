@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Montserrat:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 body{
   font-family: $primary-font;
   font-size: 16px;
   color: $text-color;
+  background-color: $body-color;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: $secondary-font;
   font-weight: 600;
-  color: $text-color-dark;
+  color: $text-color;
 }
 
 p{
   font-size: 16px;
   color: $text-color;
+  line-height: 1.6;
 }
 
 h1{

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Auridium Technologies LLC</title>
-    <link>http://localhost:1313/</link>
+    <link>https://auridium.tech/</link>
     <description>Recent content on Auridium Technologies LLC</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jul 2024 13:40:00 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jul 2024 20:17:01 +0600</lastBuildDate>
+    <atom:link href="https://auridium.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World!</title>
-      <link>http://localhost:1313/blog/hello-world/</link>
+      <link>https://auridium.tech/blog/hello-world/</link>
       <pubDate>Tue, 02 Jul 2024 13:40:00 +0600</pubDate>
-      <guid>http://localhost:1313/blog/hello-world/</guid>
+      <guid>https://auridium.tech/blog/hello-world/</guid>
       <description>The start of a new era Long awaited, this is the public announcement of the opening of my new company, Auridium Technologies LLC. This will serve as my umbrella organization for various mechanical design consulting activities as well as any software or hardware products I launch (I have a few ideas in particular I want to fit into downtime within the next six months).</description>
     </item>
   </channel>

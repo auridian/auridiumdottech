@@ -1,10 +1,39 @@
 .site-team{
   padding: 100px 0;
+  background: linear-gradient(135deg, rgba($gray, 0.8), rgba($gray, 0.6));
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba($primary-color, 0.05) 0px,
+      rgba($primary-color, 0.05) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+    pointer-events: none;
+  }
   &-member{
-    background: $gray;
+    background: rgba($gray, 0.5);
     padding: 65px 30px 30px;
     margin: 50px 0 30px;
     position: relative;
+    border: 1px solid rgba($primary-color, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba($primary-color, 0.3);
+      border-color: $primary-color;
+    }
     @include tablet{
       text-align: center;
     }
@@ -15,9 +44,17 @@
       overflow: hidden;
       left: 30px; top: 0;
       transform: translateY(-50%);
+      border: 2px solid $primary-color;
+      box-shadow: 0 0 10px rgba($primary-color, 0.5);
       @include tablet{
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+      img {
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
     &-content{
@@ -26,12 +63,14 @@
         color: $primary-color;
         margin-bottom: 10px;
         font-weight: 500;
+        text-shadow: 0 0 5px rgba($primary-color, 0.3);
       }
       p{
         font-size: 18px;
-        color: $text-color-dark;
+        color: $text-color;
         margin-bottom: 20px;
         font-weight: 300;
+        text-shadow: 0 0 5px rgba($primary-color, 0.3);
       }
     }
     &-social{
@@ -40,7 +79,13 @@
       li{
         display: inline-block;
         a{
-          color: $text-color-dark;
+          color: $text-color;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $primary-color;
+            text-shadow: 0 0 5px $primary-color,
+                         0 0 10px $primary-color;
+          }
         }
         &:not(:last-child){
           margin-right: 10px;

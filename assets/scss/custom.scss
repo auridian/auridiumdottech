@@ -1,0 +1,593 @@
+// Cyberpunk Theme Variables
+$neon-pink: #ff2a6d;
+$neon-blue: #05d9e8;
+$neon-purple: #b967ff;
+$dark-bg: #0a0a0f;
+$darker-bg: #050507;
+$text-color: #ffffff;
+$text-secondary: #b3b3b3;
+
+// Global Styles
+body {
+  background-color: $dark-bg;
+  color: $text-color;
+  font-family: 'Inter', sans-serif;
+}
+
+// Neon Text Effect
+.neon-text {
+  text-shadow: 0 0 5px $neon-blue,
+               0 0 10px $neon-blue,
+               0 0 20px $neon-blue;
+  color: $neon-blue;
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 5px $neon-pink,
+               0 0 10px $neon-pink,
+               0 0 20px $neon-pink;
+  color: $neon-pink;
+}
+
+// Navigation
+.site-navigation {
+  background-color: rgba($darker-bg, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba($neon-blue, 0.2);
+  
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  
+  .nav-link {
+    color: $text-color;
+    &:hover {
+      color: $neon-blue;
+    }
+  }
+}
+
+// Buttons
+.btn-primary {
+  background: linear-gradient(45deg, $neon-blue, $neon-purple);
+  border: none;
+  color: $text-color;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba($neon-blue, 0.5);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid $neon-blue;
+  color: $neon-blue;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba($neon-blue, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+// Feature Cards
+.feature-card {
+  background: rgba($darker-bg, 0.5);
+  border: 1px solid rgba($neon-blue, 0.2);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $neon-blue;
+    box-shadow: 0 0 20px rgba($neon-blue, 0.2);
+  }
+  
+  .icon {
+    color: $neon-blue;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: $text-secondary;
+  }
+}
+
+// Sections
+.section {
+  padding: 5rem 0;
+  
+  &-title {
+    @extend .neon-text;
+    margin-bottom: 1rem;
+  }
+  
+  &-subtitle {
+    color: $text-secondary;
+    margin-bottom: 3rem;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $darker-bg;
+  border-top: 1px solid rgba($neon-blue, 0.2);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  
+  .site-footer-logo {
+    margin-bottom: 2rem;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .site-footer-widget {
+    margin-bottom: 2rem;
+
+    &-title {
+      color: $neon-blue;
+      margin-bottom: 1.5rem;
+    }
+
+    &-description {
+      color: $text-secondary;
+    }
+
+    &-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+        
+        a {
+          color: $text-secondary;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            color: $neon-blue;
+            text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .site-footer-copyright {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba($neon-blue, 0.1);
+    text-align: center;
+    color: $text-secondary;
+
+    a {
+      color: $neon-blue;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .feature-card {
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+}
+
+// Animations
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba($neon-blue, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba($neon-blue, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba($neon-blue, 0.5);
+  }
+}
+
+.glow-effect {
+  animation: glow 2s infinite;
+}
+
+// Form Styles
+.alpha-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba($darker-bg, 0.5);
+  border: 1px solid rgba($neon-blue, 0.2);
+  border-radius: 8px;
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $neon-blue;
+      font-weight: 500;
+    }
+    
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      background: rgba($dark-bg, 0.8);
+      border: 1px solid rgba($neon-blue, 0.3);
+      border-radius: 4px;
+      color: $text-color;
+      transition: all 0.3s ease;
+      
+      &:focus {
+        outline: none;
+        border-color: $neon-blue;
+        box-shadow: 0 0 10px rgba($neon-blue, 0.3);
+      }
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+}
+
+// Content Pages
+.content-page {
+  max-width: 800px;
+  margin: 6rem auto 2rem;
+  padding: 2rem;
+  background: rgba($darker-bg, 0.7);
+  border: 1px solid rgba($neon-blue, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $neon-blue;
+    text-shadow: 0 0 5px $neon-blue,
+                 0 0 10px $neon-blue,
+                 0 0 20px $neon-blue;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    color: $text-color;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+  }
+  
+  h2 {
+    color: $neon-pink;
+    margin: 2.5rem 0 1rem;
+    font-size: 2rem;
+    text-shadow: 0 0 5px $neon-pink,
+                 0 0 10px rgba($neon-pink, 0.5);
+  }
+  
+  h3 {
+    color: $neon-blue;
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px $neon-blue,
+                 0 0 10px rgba($neon-blue, 0.5);
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: $text-color;
+  }
+  
+  ul, ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.75rem;
+      color: $text-color;
+      
+      strong {
+        color: $neon-blue;
+      }
+    }
+  }
+  
+  a {
+    color: $neon-blue;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    
+    &:hover {
+      color: $neon-pink;
+      text-shadow: 0 0 5px rgba($neon-pink, 0.5);
+    }
+  }
+  
+  blockquote {
+    border-left: 4px solid $neon-blue;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    background: rgba($darker-bg, 0.5);
+    border-radius: 0 8px 8px 0;
+    
+    p {
+      margin: 0;
+      font-style: italic;
+      color: $text-secondary;
+    }
+  }
+  
+  code {
+    background: rgba($darker-bg, 0.8);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    color: $neon-pink;
+  }
+  
+  pre {
+    background: rgba($darker-bg, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba($neon-blue, 0.2);
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    
+    code {
+      background: none;
+      padding: 0;
+      color: $text-color;
+    }
+  }
+
+  // Add a subtle grid pattern to the background
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(rgba($neon-blue, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba($neon-blue, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
+
+// Feature Grid
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+// Timeline
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, $neon-blue, $neon-pink);
+  }
+  
+  .timeline-item {
+    margin: 2rem 0;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: $neon-blue;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .timeline-content {
+      width: calc(50% - 30px);
+      padding: 1.5rem;
+      background: rgba($darker-bg, 0.5);
+      border: 1px solid rgba($neon-blue, 0.2);
+      border-radius: 8px;
+      
+      h3 {
+        color: $neon-blue;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    &:nth-child(odd) .timeline-content {
+      margin-left: auto;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .timeline {
+    &::before {
+      left: 0;
+    }
+    
+    .timeline-item {
+      &::before {
+        left: 0;
+      }
+      
+      .timeline-content {
+        width: calc(100% - 30px);
+        margin-left: 30px !important;
+      }
+    }
+  }
+  
+  .alpha-form {
+    padding: 1rem;
+  }
+  
+  .content-page {
+    padding: 1rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Hero Section
+.site-hero {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  margin: 0;
+  border: none;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba($darker-bg, 0.8),
+      rgba($darker-bg, 0.6)
+    );
+  }
+  
+  .site-hero-content {
+    position: relative;
+    z-index: 2;
+    background: rgba($darker-bg, 0.7);
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid rgba($neon-blue, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: 0 auto;
+    
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: $neon-blue;
+      text-shadow: 0 0 5px $neon-blue,
+                   0 0 10px $neon-blue,
+                   0 0 20px $neon-blue;
+      animation: textGlow 2s ease-in-out infinite alternate;
+      
+      @keyframes textGlow {
+        from {
+          text-shadow: 0 0 5px $neon-blue,
+                       0 0 10px $neon-blue,
+                       0 0 20px $neon-blue;
+        }
+        to {
+          text-shadow: 0 0 10px $neon-blue,
+                       0 0 20px $neon-blue,
+                       0 0 30px $neon-blue,
+                       0 0 40px rgba($neon-blue, 0.5);
+        }
+      }
+      
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+    
+    h5 {
+      color: $text-color;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 5px rgba($neon-blue, 0.5),
+                   0 0 10px rgba($neon-blue, 0.3);
+    }
+    
+    .site-hero-content-buttons {
+      margin-top: 2rem;
+      padding: 0;
+      list-style: none;
+      
+      li {
+        display: inline-block;
+        margin: 0.5rem;
+        
+        @media (max-width: 768px) {
+          display: block;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+} 

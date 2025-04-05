@@ -1,25 +1,57 @@
 .site-contact{
   padding: 150px 0 100px;
-  background: #bbb;
+  background: linear-gradient(135deg, rgba($gray, 0.8), rgba($gray, 0.6));
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba($primary-color, 0.05) 0px,
+      rgba($primary-color, 0.05) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+    pointer-events: none;
+  }
   @include mobile{
     padding: 120px 0 100px;
   }
   &-title{
     font-weight: 700;
+    color: $text-color;
+    text-shadow: 0 0 5px $primary-color,
+                 0 0 10px $primary-color;
     @include tablet{
       font-size: 40px;
     }
     span{
       color: $primary-color;
+      text-shadow: 0 0 5px $primary-color,
+                   0 0 10px $primary-color,
+                   0 0 20px $primary-color;
     }
   }
   &-form{
     margin-top: 20px;
+    background: rgba($gray, 0.5);
+    border: 1px solid rgba($primary-color, 0.2);
+    border-radius: 8px;
+    padding: 30px;
     h4{
       font-weight: 300;
       text-transform: uppercase;
       margin-bottom: 50px;
       letter-spacing: 3px;
+      color: $text-color;
+      text-shadow: 0 0 5px rgba($primary-color, 0.3);
       @include tablet{
         font-size: 20px;
       }
@@ -27,18 +59,34 @@
         margin-bottom: 70px;
       }
     }
+    .form-control {
+      background: rgba($gray, 0.3);
+      border: 1px solid rgba($primary-color, 0.2);
+      border-radius: 4px;
+      color: $text-color;
+      transition: all 0.3s ease;
+      &:focus {
+        background: rgba($gray, 0.5);
+        border-color: $primary-color;
+        box-shadow: 0 0 10px rgba($primary-color, 0.3);
+      }
+    }
   }
 }
 .contact-form-generator {
   margin-top: 20px;
-    a{
+  a{
     color: $text-color;
     font-size: 13px;
     text-transform: uppercase;
     margin-bottom: 50px;
     letter-spacing: 3px;
+    transition: all 0.3s ease;
     &:hover{
       text-decoration: none;
+      color: $primary-color;
+      text-shadow: 0 0 5px $primary-color,
+                   0 0 10px $primary-color;
     }
     @include tablet{
       font-size: 20px;

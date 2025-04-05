@@ -1,7 +1,9 @@
 .site-counter{
   padding: 85px 0;
-  color: $white;
-  background: $secondary-color;
+  color: $text-color;
+  background: rgba($gray, 0.5);
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 8px;
   .section-title{
     margin-bottom: 40px;
   }
@@ -16,12 +18,16 @@
     &-title{
       font-size: 20px;
       font-weight: 300;
+      color: $text-color-dark;
     }
     &-number{
-      color: $white;
+      color: $primary-color;
       font-size: 60px;
       margin-bottom: 0;
       font-weight: 700;
+      text-shadow: 0 0 5px $primary-color,
+                   0 0 10px $primary-color,
+                   0 0 20px $primary-color;
     }
   }
 }

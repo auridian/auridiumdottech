@@ -1,11 +1,36 @@
 .site-hero{
   position: relative;
   height: 100vh;
+  background: linear-gradient(135deg, rgba($gray, 0.8), rgba($gray, 0.6));
   background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 8px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba($primary-color, 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba($secondary-color, 0.2) 0%, transparent 50%),
+      repeating-linear-gradient(
+        45deg,
+        rgba($primary-color, 0.05) 0px,
+        rgba($primary-color, 0.05) 1px,
+        transparent 1px,
+        transparent 10px
+      );
+    z-index: 1;
+  }
+  
   @include desktop{
     height: auto;
     padding: 200px 0;
@@ -14,8 +39,32 @@
     padding: 150px 0;
   }
   &-content{
+    position: relative;
+    z-index: 2;
+    background: rgba($gray, 0.5);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba($primary-color, 0.2);
+    backdrop-filter: blur(10px);
     h1{
       margin-bottom: 75px;
+      text-shadow: 0 0 5px $primary-color,
+                   0 0 10px $primary-color,
+                   0 0 20px $primary-color;
+      color: $primary-color;
+      animation: glow 2s ease-in-out infinite alternate;
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 5px $primary-color,
+                       0 0 10px $primary-color,
+                       0 0 20px $primary-color;
+        }
+        to {
+          text-shadow: 0 0 10px $primary-color,
+                       0 0 20px $primary-color,
+                       0 0 30px $primary-color;
+        }
+      }
       @include desktop-lg{
         font-size: 50px;
         margin-bottom: 50px;
@@ -23,6 +72,13 @@
       @include mobile{
         font-size: 40px;
       }
+    }
+    p {
+      color: $text-color;
+      text-shadow: 0 0 5px rgba($primary-color, 0.3);
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
     &-buttons{
       margin: 0;
@@ -49,10 +105,34 @@
         }
       }
     }
+    .btn {
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba($primary-color, 0.2),
+          transparent
+        );
+        transition: 0.5s;
+      }
+      &:hover::before {
+        left: 100%;
+      }
+    }
   }
   &-scroll{
     position: absolute;
-    left: 50%; bottom: 70px;
+    left: 50%;
+    bottom: 70px;
     transform: translateX(-50%);
   }
 }

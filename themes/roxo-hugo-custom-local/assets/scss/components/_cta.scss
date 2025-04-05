@@ -1,7 +1,28 @@
 .site-cta{
   padding: 130px 0;
+  background: linear-gradient(135deg, rgba($gray, 0.8), rgba($gray, 0.6));
   background-size: cover;
   background-position: center center;
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba($primary-color, 0.1) 0px,
+      rgba($primary-color, 0.1) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+    pointer-events: none;
+  }
   @include desktop{
     padding: 100px 0;
   }
@@ -10,6 +31,9 @@
     font-weight: 700;
     letter-spacing: 10px;
     margin-bottom: 60px;
+    color: $text-color;
+    text-shadow: 0 0 5px $primary-color,
+                 0 0 10px $primary-color;
     @include desktop{
       letter-spacing: 5px;
     }
@@ -19,7 +43,7 @@
     }
     @include mobile{
       font-size: 40px;
-      letter-spacing: 1;
+      letter-spacing: 1px;
     }
   }
   &-buttons{

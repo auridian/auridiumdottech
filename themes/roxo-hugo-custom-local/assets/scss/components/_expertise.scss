@@ -1,6 +1,26 @@
 .site-expertise{
   padding: 100px 0;
-  background: #ccc;
+  background: rgba($gray, 0.5);
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba($primary-color, 0.05) 0px,
+      rgba($primary-color, 0.05) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+    pointer-events: none;
+  }
   &-list{
     padding: 0;
     margin: 10px 0 0 20px;
@@ -13,8 +33,23 @@
       font-size: 25px;
       font-weight: 300;
       color: $text-color;
+      position: relative;
+      padding-left: 30px;
+      &::before {
+        content: '>';
+        position: absolute;
+        left: 0;
+        color: $primary-color;
+        text-shadow: 0 0 5px $primary-color;
+      }
       &:not(:last-child){
         margin-bottom: 10px;
+      }
+      &:hover {
+        color: $primary-color;
+        text-shadow: 0 0 5px $primary-color;
+        transform: translateX(5px);
+        transition: all 0.3s ease;
       }
     }
   }

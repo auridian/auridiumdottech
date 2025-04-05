@@ -1,6 +1,7 @@
 .site-footer{
-  background: $secondary-color;
-  padding: 100px 0;
+  background: $gray;
+  border-top: 1px solid rgba($primary-color, 0.2);
+  padding: 100px 0 2rem;
   &-logo{
     margin-bottom: 50px;
     @include mobile{
@@ -15,17 +16,22 @@
       text-align: center;
     }
     &-title{
-      color: $white;
+      color: $primary-color;
       margin-bottom: 30px;
       @include desktop{
         margin-bottom: 20px;
       }
     }
     &-description{
-      color: $white;
+      color: $text-color-dark;
       line-height: 30px;
       a{
-        color: $white;
+        color: $text-color-dark;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover {
+          color: $primary-color;
+        }
       }
     }
     &-links{
@@ -34,9 +40,13 @@
       li{
         list-style: none;
         a{
-          color: $white;
+          color: $text-color-dark;
           transition: all 0.3s $site-ease;
           display: block;
+          text-decoration: none;
+          &:hover {
+            color: $primary-color;
+          }
         }
         &:not(:last-child){
           a{
@@ -54,7 +64,7 @@
         margin-bottom: 20px;
       }
       p{
-        color: $white;
+        color: $text-color-dark;
       }
       &:hover{
         text-decoration: none;
@@ -63,17 +73,21 @@
   }
   &-copyright{
     p{
-      color: $white;
+      color: $text-color-dark;
       margin: 50px auto 0;
       text-align: center;
     }
     a{
       color: $text-color-dark;
-      transition: all .3s ease;
-      @include tablet{
-        font-size: 20px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      &:hover {
+        color: $primary-color;
       }
       @include desktop{
+        font-size: 20px;
+      }
+      @include mobile{
         margin-bottom: 70px;
       }
     }
