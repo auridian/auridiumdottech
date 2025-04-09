@@ -23,6 +23,8 @@ Be among the first to experience the future of personal AI. Our alpha program is
 
 ## Sign Up for Alpha Access
 
+FORM COMING SOON (Last edited: April 8, 02025)
+
 <form action="https://formspree.io/f/your-form-id" method="POST" class="alpha-form">
   <div class="form-group">
     <label for="name">Name</label>
@@ -62,9 +64,10 @@ Be among the first to experience the future of personal AI. Our alpha program is
 
 While waiting for alpha access, join our growing community:
 
-- [Discord Server](https://discord.gg/auridium)
+COMING SOON -- Stay tuned!
+<!-- - [Discord Server](https://discord.gg/auridium)
 - [GitHub Repository](https://github.com/auridium)
-- [Twitter Updates](https://twitter.com/auridium)
+- [Twitter Updates](https://twitter.com/auridium) -->
 
 ## FAQ
 
