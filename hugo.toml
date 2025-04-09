@@ -1,6 +1,6 @@
 baseURL       = "https://auridium.tech/"
 languageCode  = "en-us"
-title         = "Nexus - Autonomous Intelligence, Rooted in You"
+title         = "Nexus - Autonomous Hyperindividualized AI"
 theme         = "roxo-hugo-custom-local"
 summarylength = 25
 
@@ -37,7 +37,7 @@ summarylength = 25
   custom_stylesheets = ["scss/custom.scss"]
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Nexus: The first local-first AI system that learns your world and helps run it."
+  description = "Nexus: Hyper-individualized, self-improving AI system that learns your world and helps you run it"
   author = "Auridium Technologies LLC"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
@@ -52,8 +52,8 @@ summarylength = 25
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/cyberpunk-bg.jpg"
-    heading               = "Nexus: Autonomous Intelligence, Rooted in You"
-    tagline               = "The first local-first AI system that learns your world and helps run it."
+    heading               = "Nexus: Autonomous Hyper-Individualized AI"
+    tagline               = "Self-improving AI system that learns your world and helps you run it"
     primary_button        = "Join the Alpha"
     primary_button_url    = "join-alpha"
     secondary_button      = "Learn More"
@@ -68,12 +68,12 @@ summarylength = 25
       description = "Builds a deep understanding of your world, your preferences, and your workflow"
       icon = "brain"
     [[params.features.item]]
-      title = "Local Models"
-      description = "Runs entirely on your machine, keeping your data private and secure"
+      title = "Privacy Conscious"
+      description = "Nexus can run on your hardware, optionally outsourcing tasks with sensitive information redacted. Nexus will NEVER sell your data."
       icon = "shield"
     [[params.features.item]]
       title = "Tool Integration"
-      description = "Seamlessly connects with your existing tools and workflows"
+      description = "Seamlessly connects with your existing tools and workflows, and builds and recommends new ones as needed."
       icon = "plug"
 
   [params.audience]
@@ -89,8 +89,8 @@ summarylength = 25
       description = "Streamline your development process with AI assistance"
       icon = "code"
     [[params.audience.item]]
-      title = "Neurospicy Folks"
-      description = "Designed with neurodiversity in mind"
+      title = "The Weird Ones"
+      description = "Nexus grows with you and builds the user experience that only you could come up with."
       icon = "brain"
 
   [params.roadmap]
@@ -103,7 +103,7 @@ summarylength = 25
       icon = "robot"
     [[params.roadmap.item]]
       title = "Nexus Dashboard"
-      description = "Beautiful interface for managing your AI ecosystem"
+      description = "Retro-cyberpunk interface for managing your AI ecosystem"
       icon = "dashboard"
     [[params.roadmap.item]]
       title = "Plugin System"

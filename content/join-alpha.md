@@ -15,10 +15,11 @@ Be among the first to experience the future of personal AI. Our alpha program is
 - Priority support
 
 ### Requirements:
-- Windows 10/11, macOS 10.15+, or Linux
-- 8GB RAM minimum (16GB recommended)
+- an operating system that is reasonably up to date (Win11, Mac, Linux)
+- 8GB RAM minimum (16GB recommended; system performance will be degraded on weaker/older hardware)
+- a solid GPU or willingness to outsource most LLM activity to commercial systems (12GB VRAM minimum recommended)
 - 20GB free disk space
-- Internet connection for updates
+- Internet connection for updates, commercial tool calls, information fetching, and more
 
 ## Sign Up for Alpha Access
 
@@ -68,7 +69,7 @@ While waiting for alpha access, join our growing community:
 ## FAQ
 
 ### How long is the alpha program?
-The alpha program will run for approximately 3 months, with regular updates and improvements based on user feedback.
+The alpha program will run for approximately 3 months, starting at the end of April 02025, with regular updates and improvements based on user feedback.
 
 ### Will I need to pay for the alpha?
 No, alpha access is completely free. We're focused on gathering feedback and improving the product.
@@ -83,5 +84,6 @@ We value all types of feedback, including:
 - UI/UX suggestions
 - Performance feedback
 - Use case examples
+- Basically: whatever the hell you want. Try to break it. Please. And then tell me what you broke and we'll fix it. 
 
 Ready to join? Fill out the form above and we'll be in touch soon! 

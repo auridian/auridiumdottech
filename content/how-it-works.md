@@ -14,12 +14,12 @@ Nexus builds a deep understanding of your world through advanced semantic memory
 
 ## Local Models
 
-Your data stays on your machine. Nexus runs entirely locally, ensuring your privacy and security while maintaining high performance.
+Your data stays on your machine. Nexus can run entirely locally, ensuring your privacy and security while maintaining high performance. If you need extra performance from commerical LLMs, Nexus can redact any critical or sensitive information before submitting any of your content to the Internet.
 
 ### Benefits:
-- **Complete Privacy**: Your data never leaves your device
-- **Fast Response Times**: No network latency
-- **Offline Capability**: Works without internet connection
+- **Complete Privacy**: Your data never leaves your device unless you authorize it to.
+- **Fast Response Times**: Minimal network latency
+- **Offline Capability**: Works without internet connection when installed locally.
 
 ## Tool Integration
 
@@ -27,8 +27,8 @@ Nexus seamlessly connects with your existing tools and workflows, becoming a nat
 
 ### Integration Features:
 - **API Connectivity**: Works with your favorite tools
-- **Custom Extensions**: Build your own integrations
-- **Workflow Automation**: Streamline your daily tasks
+- **Custom Extensions**: Build your own integrations or let it suggest and produce its own!
+- **Workflow Automation**: Streamline your daily tasks. You weren't born to be an archivist and file organizer, you were born to act!
 
 ## Getting Started
 

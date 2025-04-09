@@ -16,13 +16,13 @@ Our advanced task management and automation system that understands your goals a
 - Smart scheduling and reminders
 
 ### Nexus Dashboard
-A beautiful, intuitive interface for managing your entire AI ecosystem.
+An adaptive, interactive, retro-cyberpunk theme dashboard for interfacing with your Nexus.
 
 **Highlights:**
 - Real-time activity monitoring
 - Custom widget creation
 - Drag-and-drop interface
-- Dark/light mode support
+- Theme options to come
 - Responsive design for all devices
 
 ### Plugin System
@@ -32,34 +32,31 @@ Extend Nexus with custom tools and integrations to make it truly yours.
 - Custom tool integration
 - API extension support
 - Community plugin marketplace
-- Developer SDK
 - Documentation and examples
 
 ## Future Vision
 
-### Phase 1: Foundation (Q1 2024)
-- Core semantic memory system
-- Basic local model integration
-- Essential tool connections
-- Alpha testing program
+### Phase 1: Epoch (March-April 02025)
+- Core semantic memory system and Epoch creation
+- Basic local model integration for messy input processing with limited data types (logseq, caldav)
+- Goal, project, belief, observation, and entity tracking in conceptual and temporal dimensions
+- Basic agent loops began, first tools generated, testing tool creation.
+- Basic dashboard functional
+- Begin Nexus Alpha testing program with first cohort
 
-### Phase 2: Enhancement (Q2 2024)
-- Supervisor beta release
-- Dashboard prototype
-- Plugin system architecture
-- Community feedback integration
+### Phase 2: nex/acc part 1 (May-Summer 02025)
 
-### Phase 3: Expansion (Q3 2024)
-- Full Supervisor release
-- Dashboard public beta
-- Plugin marketplace launch
-- Advanced customization options
+- Raise funds to grow private LLM outsourcing option, fund further development
+- Create optional marketplace / repository for Nexi and users to share integrations and save time / effort integrating
+- First paying customers, MVP launched if not before
+- Feedback from Nexus Alpha first cohort integrated; begin second cohort
+- Build community feedback / fora / etc.
 
-### Phase 4: Evolution (Q4 2024)
-- AI model improvements
-- Advanced automation features
-- Enterprise features
-- Global community growth
+### Phase 3: nex/acc part 2 (Fall 02025 and beyond)
+
+- The future is hard to predict. An early Nexus will probably have hit AGI by then. Sit back and enjoy the ride. 
+- (A whole lot of TBD).
+- Enterprise version probably.
 
 ## Join the Journey
 

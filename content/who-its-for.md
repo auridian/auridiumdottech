@@ -21,9 +21,9 @@ Built by engineers, for engineers. Nexus understands your development environmen
 - **DevOps Engineers**: Automate infrastructure and deployment
 - **System Architects**: Organize and document complex systems
 
-## Neurospicy Folks
+## The Weird Ones
 
-Designed with neurodiversity in mind, Nexus adapts to your unique way of thinking and working.
+Nexus adapts to *your* way of thinking and interacting with the world. You steer the ship, no matter how you work - it will be there to help you in your own way. 
 
 ### Features for:
 - **Task Management**: Visual and flexible organization systems
