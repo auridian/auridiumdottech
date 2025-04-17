@@ -10,6 +10,49 @@
   {{ end }}
   {{ hugo.Generator }}
 
+  <!-- Critical CSS to ensure immediate styling -->
+  <style>
+    body, html {
+      background-color: #0a0a0f !important;
+      color: #ffffff !important;
+      font-family: 'Inter', sans-serif !important;
+    }
+    
+    .neon-text {
+      text-shadow: 0 0 5px #05d9e8, 0 0 10px #05d9e8, 0 0 20px #05d9e8;
+      color: #05d9e8;
+    }
+    
+    .section-card {
+      display: block !important;
+      background: rgba(5,5,7,0.7) !important;
+      border: 1px solid rgba(5,217,232,0.2) !important;
+      border-radius: 8px !important;
+      padding: 2rem !important;
+      margin-bottom: 2rem !important;
+      transition: all 0.3s ease !important;
+      text-decoration: none !important;
+    }
+    
+    .section-card:hover {
+      transform: translateY(-5px) !important;
+      border-color: #05d9e8 !important;
+      box-shadow: 0 0 20px rgba(5,217,232,0.2) !important;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(45deg, #05d9e8, #b967ff) !important;
+      border: none !important;
+      color: #ffffff !important;
+    }
+    
+    .btn-secondary {
+      background: transparent !important;
+      border: 2px solid #05d9e8 !important;
+      color: #05d9e8 !important;
+    }
+  </style>
+
   {{ "<!-- Bootstrap -->" | safeHTML }}
   {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
   <link rel="stylesheet" href="{{ $bootstrap.Permalink }}" />
