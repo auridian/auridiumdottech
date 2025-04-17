@@ -8,196 +8,223 @@ $text-color: #ffffff;
 $text-secondary: #b3b3b3;
 
 // Global Styles
-body {
+.cyberpunk-theme {
   background-color: $dark-bg;
   color: $text-color;
   font-family: 'Inter', sans-serif;
-}
 
-// Neon Text Effect
-.neon-text {
-  text-shadow: 0 0 5px $neon-blue,
-               0 0 10px $neon-blue,
-               0 0 20px $neon-blue;
-  color: $neon-blue;
-}
-
-.neon-text-pink {
-  text-shadow: 0 0 5px $neon-pink,
-               0 0 10px $neon-pink,
-               0 0 20px $neon-pink;
-  color: $neon-pink;
-}
-
-// Navigation
-.site-navigation {
-  background-color: rgba($darker-bg, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba($neon-blue, 0.2);
-  
-  .navbar-brand {
-    padding: 0;
-    margin: 0;
-    img {
-      max-width: 50px;
-      max-height: 50px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
-  }
-  
-  .nav-link {
-    color: $text-color;
-    &:hover {
-      color: $neon-blue;
-    }
-  }
-}
-
-// Buttons
-.btn-primary {
-  background: linear-gradient(45deg, $neon-blue, $neon-purple);
-  border: none;
-  color: $text-color;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba($neon-blue, 0.5);
-  }
-}
-
-.btn-secondary {
-  background: transparent;
-  border: 2px solid $neon-blue;
-  color: $neon-blue;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    background: rgba($neon-blue, 0.1);
-    transform: translateY(-2px);
-  }
-}
-
-// Feature Cards
-.feature-card {
-  background: rgba($darker-bg, 0.5);
-  border: 1px solid rgba($neon-blue, 0.2);
-  border-radius: 8px;
-  padding: 2rem;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-    border-color: $neon-blue;
-    box-shadow: 0 0 20px rgba($neon-blue, 0.2);
-  }
-  
-  .icon {
+  // Neon Text Effect
+  .neon-text {
+    text-shadow: 0 0 5px $neon-blue,
+                 0 0 10px $neon-blue,
+                 0 0 20px $neon-blue;
     color: $neon-blue;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  h3 {
-    color: $text-color;
-    margin-bottom: 1rem;
-  }
-  
-  p {
-    color: $text-secondary;
-  }
-}
-
-// Sections
-.section {
-  padding: 5rem 0;
-  
-  &-title {
-    @extend .neon-text;
-    margin-bottom: 1rem;
-  }
-  
-  &-subtitle {
-    color: $text-secondary;
-    margin-bottom: 3rem;
-  }
-}
-
-// Footer
-.site-footer {
-  background-color: $darker-bg;
-  border-top: 1px solid rgba($neon-blue, 0.2);
-  padding: 2rem 0;
-  margin-top: 4rem;
-  
-  .site-footer-logo {
-    margin-bottom: 2rem;
-    img {
-      max-width: 50px;
-      max-height: 50px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
   }
 
-  .site-footer-widget {
-    margin-bottom: 2rem;
+  .neon-text-pink {
+    text-shadow: 0 0 5px $neon-pink,
+                 0 0 10px $neon-pink,
+                 0 0 20px $neon-pink;
+    color: $neon-pink;
+  }
 
-    &-title {
-      color: $neon-blue;
-      margin-bottom: 1.5rem;
-    }
-
-    &-description {
-      color: $text-secondary;
-    }
-
-    &-links {
-      list-style: none;
+  // Navigation
+  .site-navigation {
+    background-color: rgba($darker-bg, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba($neon-blue, 0.2);
+    
+    .navbar-brand {
       padding: 0;
       margin: 0;
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    
+    .nav-link {
+      color: $text-color !important;
+      &:hover {
+        color: $neon-blue !important;
+      }
+    }
+  }
 
-      li {
-        margin-bottom: 0.5rem;
-        
-        a {
-          color: $text-secondary;
-          text-decoration: none;
-          transition: all 0.3s ease;
+  // Feature Cards
+  .site-feature {
+    background: rgba($darker-bg, 0.5);
+    border: 1px solid rgba($neon-blue, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    
+    &:hover {
+      transform: translateY(-5px);
+      border-color: $neon-blue;
+      box-shadow: 0 0 20px rgba($neon-blue, 0.2);
+    }
+    
+    .icon {
+      color: $neon-blue;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    h3 {
+      color: $text-color;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      color: $text-secondary;
+    }
+  }
+
+  // Sections
+  .section {
+    padding: 5rem 0;
+    
+    &-title {
+      @extend .neon-text;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      text-transform: none;
+      letter-spacing: 1px;
+    }
+    
+    &-subtitle {
+      color: $text-secondary;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  // Buttons
+  .btn {
+    &-primary {
+      background: linear-gradient(45deg, $neon-blue, $neon-purple);
+      border: none;
+      color: $text-color !important;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 15px rgba($neon-blue, 0.5);
+      }
+    }
+
+    &-secondary {
+      background: transparent;
+      border: 2px solid $neon-blue;
+      color: $neon-blue !important;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: rgba($neon-blue, 0.1);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  // Footer
+  .site-footer {
+    background-color: $darker-bg;
+    border-top: 1px solid rgba($neon-blue, 0.2);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    
+    .site-footer-logo {
+      margin-bottom: 2rem;
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    .site-footer-widget {
+      margin-bottom: 2rem;
+
+      &-title {
+        color: $neon-blue;
+        margin-bottom: 1.5rem;
+      }
+
+      &-description {
+        color: $text-secondary;
+      }
+
+      &-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 0.5rem;
           
-          &:hover {
-            color: $neon-blue;
-            text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+          a {
+            color: $text-secondary;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            
+            &:hover {
+              color: $neon-blue;
+              text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+            }
           }
         }
       }
     }
-  }
 
-  .site-footer-copyright {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba($neon-blue, 0.1);
-    text-align: center;
-    color: $text-secondary;
+    .site-footer-copyright {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba($neon-blue, 0.1);
+      text-align: center;
+      color: $text-secondary;
 
-    a {
-      color: $neon-blue;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      
-      &:hover {
-        text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+      a {
+        color: $neon-blue;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+        }
       }
+    }
+  }
+}
+
+// Override any remaining theme styles with !important
+.cyberpunk-theme {
+  .site-feature,
+  .site-team,
+  .site-testimonial,
+  .site-blog,
+  .site-about {
+    background-color: rgba($darker-bg, 0.5) !important;
+    color: $text-color !important;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: $text-color !important;
+    }
+    
+    p {
+      color: $text-secondary !important;
     }
   }
 }
