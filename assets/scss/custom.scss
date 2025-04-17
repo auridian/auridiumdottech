@@ -8,6 +8,12 @@ $text-color: #ffffff;
 $text-secondary: #b3b3b3;
 
 // Global Styles
+body, html {
+  background-color: $dark-bg !important;
+  color: $text-color !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
 .cyberpunk-theme {
   background-color: $dark-bg;
   color: $text-color;
@@ -30,9 +36,9 @@ $text-secondary: #b3b3b3;
 
   // Navigation
   .site-navigation {
-    background-color: rgba($darker-bg, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba($neon-blue, 0.2);
+    background-color: rgba($darker-bg, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba($neon-blue, 0.2) !important;
     
     .navbar-brand {
       padding: 0;
@@ -107,42 +113,42 @@ $text-secondary: #b3b3b3;
   // Buttons
   .btn {
     &-primary {
-      background: linear-gradient(45deg, $neon-blue, $neon-purple);
-      border: none;
+      background: linear-gradient(45deg, $neon-blue, $neon-purple) !important;
+      border: none !important;
       color: $text-color !important;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      font-weight: 600;
-      transition: all 0.3s ease;
+      padding: 0.75rem 1.5rem !important;
+      border-radius: 4px !important;
+      font-weight: 600 !important;
+      transition: all 0.3s ease !important;
       
       &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 0 15px rgba($neon-blue, 0.5);
+        transform: translateY(-2px) !important;
+        box-shadow: 0 0 15px rgba($neon-blue, 0.5) !important;
       }
     }
 
     &-secondary {
-      background: transparent;
-      border: 2px solid $neon-blue;
+      background: transparent !important;
+      border: 2px solid $neon-blue !important;
       color: $neon-blue !important;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      font-weight: 600;
-      transition: all 0.3s ease;
+      padding: 0.75rem 1.5rem !important;
+      border-radius: 4px !important;
+      font-weight: 600 !important;
+      transition: all 0.3s ease !important;
       
       &:hover {
-        background: rgba($neon-blue, 0.1);
-        transform: translateY(-2px);
+        background: rgba($neon-blue, 0.1) !important;
+        transform: translateY(-2px) !important;
       }
     }
   }
 
   // Footer
   .site-footer {
-    background-color: $darker-bg;
-    border-top: 1px solid rgba($neon-blue, 0.2);
-    padding: 2rem 0;
-    margin-top: 4rem;
+    background-color: $darker-bg !important;
+    border-top: 1px solid rgba($neon-blue, 0.2) !important;
+    padding: 2rem 0 !important;
+    margin-top: 4rem !important;
     
     .site-footer-logo {
       margin-bottom: 2rem;
@@ -159,12 +165,12 @@ $text-secondary: #b3b3b3;
       margin-bottom: 2rem;
 
       &-title {
-        color: $neon-blue;
+        color: $neon-blue !important;
         margin-bottom: 1.5rem;
       }
 
       &-description {
-        color: $text-secondary;
+        color: $text-secondary !important;
       }
 
       &-links {
@@ -176,12 +182,12 @@ $text-secondary: #b3b3b3;
           margin-bottom: 0.5rem;
           
           a {
-            color: $text-secondary;
+            color: $text-secondary !important;
             text-decoration: none;
             transition: all 0.3s ease;
             
             &:hover {
-              color: $neon-blue;
+              color: $neon-blue !important;
               text-shadow: 0 0 5px rgba($neon-blue, 0.5);
             }
           }
@@ -194,10 +200,10 @@ $text-secondary: #b3b3b3;
       padding-top: 2rem;
       border-top: 1px solid rgba($neon-blue, 0.1);
       text-align: center;
-      color: $text-secondary;
+      color: $text-secondary !important;
 
       a {
-        color: $neon-blue;
+        color: $neon-blue !important;
         text-decoration: none;
         transition: all 0.3s ease;
         
@@ -205,6 +211,134 @@ $text-secondary: #b3b3b3;
           text-shadow: 0 0 5px rgba($neon-blue, 0.5);
         }
       }
+    }
+  }
+}
+
+// Force section card styles with !important
+.section-card {
+  display: block !important;
+  background: rgba($darker-bg, 0.7) !important;
+  border: 1px solid rgba($neon-blue, 0.2) !important;
+  border-radius: 8px !important;
+  padding: 2rem !important;
+  margin-bottom: 2rem !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  backdrop-filter: blur(10px) !important;
+  
+  &:hover {
+    transform: translateY(-5px) !important;
+    border-color: $neon-blue !important;
+    box-shadow: 0 0 20px rgba($neon-blue, 0.2) !important;
+    text-decoration: none !important;
+    
+    .fa {
+      color: $neon-blue !important;
+      text-shadow: 0 0 10px $neon-blue !important;
+    }
+    
+    h3 {
+      color: $neon-blue !important;
+      text-shadow: 0 0 5px $neon-blue,
+                   0 0 10px rgba($neon-blue, 0.5) !important;
+    }
+  }
+  
+  .section-card-content {
+    text-align: center !important;
+    
+    .fa {
+      font-size: 3rem !important;
+      color: $text-color !important;
+      margin-bottom: 1.5rem !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    h3 {
+      color: $text-color !important;
+      font-size: 1.5rem !important;
+      margin-bottom: 1rem !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    p {
+      color: $text-secondary !important;
+      margin-bottom: 0 !important;
+      line-height: 1.6 !important;
+    }
+  }
+}
+
+// Site sections
+.site-sections {
+  padding: 5rem 0 !important;
+  background-color: $dark-bg !important;
+  
+  .section-title {
+    text-align: center !important;
+    margin-bottom: 3rem !important;
+    
+    h2 {
+      color: $neon-blue !important;
+      font-size: 2.5rem !important;
+      margin-bottom: 1rem !important;
+      text-shadow: 0 0 5px $neon-blue,
+                   0 0 10px $neon-blue,
+                   0 0 20px $neon-blue !important;
+    }
+    
+    p {
+      color: $text-secondary !important;
+      font-size: 1.25rem !important;
+    }
+  }
+}
+
+// Cyberpunk hero overrides
+.cyberpunk-hero {
+  position: relative !important;
+  min-height: 100vh !important;
+  background-size: cover !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+  &::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(135deg, rgba($darker-bg, 0.8), rgba($darker-bg, 0.6)) !important;
+  }
+  
+  .site-hero-content {
+    background: rgba($darker-bg, 0.7) !important;
+    padding: 3rem !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba($neon-blue, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+    
+    h1 {
+      font-size: 3.5rem !important;
+      margin-bottom: 1.5rem !important;
+      color: $neon-blue !important;
+      text-shadow: 0 0 5px $neon-blue,
+                   0 0 10px $neon-blue,
+                   0 0 20px $neon-blue !important;
+      animation: textGlow 2s ease-in-out infinite alternate !important;
+    }
+    
+    h5 {
+      color: $text-color !important;
+      font-size: 1.25rem !important;
+      margin-bottom: 1rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 2px !important;
+      text-shadow: 0 0 5px rgba($neon-blue, 0.5),
+                   0 0 10px rgba($neon-blue, 0.3) !important;
     }
   }
 }

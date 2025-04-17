@@ -1,0 +1,83 @@
+{{ with .Site.Params.features }}
+{{ if .enable }}
+<section class="site-sections cyberpunk-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2 class="neon-text">{{ .title }}</h2>
+          <p>{{ .subtitle }}</p>
+        </div>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-4 col-md-6">
+        <a href="/how-it-works" class="section-card">
+          <div class="section-card-content">
+            <i class="fa fa-{{ .icon }}"></i>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with .Site.Params.audience }}
+{{ if .enable }}
+<section class="site-sections cyberpunk-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2 class="neon-text">{{ .title }}</h2>
+          <p>{{ .subtitle }}</p>
+        </div>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-4 col-md-6">
+        <a href="/who-its-for" class="section-card">
+          <div class="section-card-content">
+            <i class="fa fa-{{ .icon }}"></i>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with .Site.Params.roadmap }}
+{{ if .enable }}
+<section class="site-sections cyberpunk-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2 class="neon-text">{{ .title }}</h2>
+          <p>{{ .subtitle }}</p>
+        </div>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-4 col-md-6">
+        <a href="/roadmap" class="section-card">
+          <div class="section-card-content">
+            <i class="fa fa-{{ .icon }}"></i>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }} 
