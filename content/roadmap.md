@@ -1,40 +1,40 @@
 ---
 title: "Roadmap"
-description: "The Future of Personal AI"
+description: "The Evolution of Nexus"
 ---
 
-## Coming Soon
+## In Development
 
 ### Supervisor
-Our advanced task management and automation system that understands your goals and helps you achieve them.
+Your AI co-pilot that learns how you think and works the way you do.
 
-**Features:**
-- Intelligent task prioritization
-- Automated workflow optimization
-- Goal tracking and progress monitoring
-- Natural language task creation
-- Smart scheduling and reminders
+**Core Systems:**
+- Learns your priorities, not just your tasks
+- Adapts your workflows in real-time
+- Tracks progress your way
+- Understands commands in plain language
+- Keeps you on track without getting in your way
 
 ### Nexus Dashboard
 An adaptive, interactive, retro-cyberpunk theme dashboard for interfacing with your Nexus.
 
-**Highlights:**
-- Real-time activity monitoring
-- Custom widget creation
-- Drag-and-drop interface
-- Theme options to come
-- Responsive design for all devices
+**Features:**
+- Live system monitoring with *style*
+- User interface adapts to your use cases
+- Drag-and-drop widget customization
+- Themes that don't feel like a hospital or LinkedIn
+- Runs on anything with a screen
 
-### Plugin System
-Extend Nexus with custom tools and integrations to make it truly yours.
+### Neural Links
+Hack Nexus to its core. Make it truly yours.
 
-**Capabilities:**
-- Custom tool integration
-- API extension support
-- Community plugin marketplace
-- Documentation and examples
+**Powers:**
+- Hook into any tool/system/workflow you use already
+- Self-extending: identifies missing capabilities and tools and generates them
+- Share workflows on the Nexus Market (if you choose)
 
-## Future Vision
+
+## The Path Forward
 
 ### Phase 1: Epoch (March-April 02025)
 - Core semantic memory system and Epoch creation
@@ -55,8 +55,9 @@ Extend Nexus with custom tools and integrations to make it truly yours.
 ### Phase 3: nex/acc part 2 (Fall 02025 and beyond)
 
 - The future is hard to predict. An early Nexus will probably have hit AGI by then. Sit back and enjoy the ride. 
-- (A whole lot of TBD).
-- Enterprise version probably.
+- (A whole lot of TBD)
+- Enterprise version
+- Light mode
 
 ## Join the Journey
 
