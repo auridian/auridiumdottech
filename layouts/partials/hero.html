@@ -8,12 +8,12 @@
         <div class="col-lg-10 mx-auto">
           <div class="site-hero-content text-center" style="background: rgba(5,5,7,0.7); padding: 3rem; border-radius: 8px; border: 1px solid rgba(5,217,232,0.2); backdrop-filter: blur(10px);">
             <h5 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 5px rgba(5,217,232,0.5), 0 0 10px rgba(5,217,232,0.3);">{{ .tagline }}</h5>
-            <h1 class="neon-text" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: #05d9e8; text-shadow: 0 0 5px #05d9e8, 0 0 10px #05d9e8, 0 0 20px #05d9e8;">
+            <h1 class="neon-text" style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: #05d9e8; text-shadow: 0 0 5px #05d9e8, 0 0 10px #05d9e8, 0 0 20px #05d9e8; line-height: 1.2; word-wrap: break-word; max-width: 100%;">
               {{ .heading }}
             </h1>
-            <ul class="site-hero-content-buttons" style="list-style: none; padding: 0; margin-top: 2rem;">
-              <li style="display: inline-block; margin: 0.5rem;">
-                <a href="{{ .primary_button_url | absURL }}" class="btn btn-primary" style="background: linear-gradient(45deg, #05d9e8, #b967ff); border: none; color: #ffffff; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; transition: all 0.3s ease; display: inline-block; text-decoration: none;">
+            <ul class="site-hero-content-buttons">
+              <li>
+                <a href="{{ .primary_button_url | absURL }}" class="btn btn-primary">
                   <span class="btn-area">
                     <span data-text="{{ .primary_button }}">
                       {{ .primary_button }}
@@ -21,8 +21,8 @@
                   </span>
                 </a>
               </li>
-              <li style="display: inline-block; margin: 0.5rem;">
-                <a href="{{ .secondary_button_url | absURL }}" class="btn btn-secondary" style="background: transparent; border: 2px solid #05d9e8; color: #05d9e8; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; transition: all 0.3s ease; display: inline-block; text-decoration: none;">
+              <li>
+                <a href="{{ .secondary_button_url | absURL }}" class="btn btn-secondary">
                   <span class="btn-area">
                     <span data-text="{{ .secondary_button }}">
                       {{ .secondary_button }}
