@@ -1,8 +1,0 @@
-enable  : false
-title   : Staff
-members  :
-  - image       : images/team/milo_headshot.jpg
-    name        : Milo J. Hooper
-    designation : Owner
-    linkedin    : https://www.linkedin.com/in/defusion
-
