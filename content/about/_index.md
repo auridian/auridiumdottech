@@ -10,6 +10,4 @@ description : |
   Nexus is currently in early alpha stage. Stay tuned for further opportunities to get involved. 
 
   Auridium Technologies started off as a technology contracting company for mechanical automation, process scale up, and mechanical amplification of labor. It now serves as the vessel for primarily-software activities of owner/founder Milo J. Hooper.
-expertise_title: "Expertise"
-expertise_sectors: ["Mechanical Automation Implementation", "Fixtures and Tooling", "System Engineering of Robotic Workcells", "Robot End Effector Design", "Mechanical Design for High Voltage", "Mechanical Design for Vacuum", "Design for Manufacture and Assembly (DFM/A)", "Incorporating Human Factors Into Design", "Process Shadowing and Optimization Consulting", "Design for Simplicity", "Startup Engineering Scale-Up"]
 ---

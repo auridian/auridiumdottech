@@ -1,50 +1,23 @@
 {{ define "main" }}
 
-<section class="site-about-header">
+<section class="content-page">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="site-about-wrapper">
-          <div class="site-about-company">
-            <h1>
-              {{ .Params.heading }}
-            </h1>
-          </div>
-          <div class="site-about-description">
-            <p>
-              {{ .Description }}
-            </p>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="about-content">
+          <h1>{{ .Params.heading }}</h1>
+          <div class="about-description">
+            {{ range split .Description "\n\n" }}
+              {{ if . }}
+                <p>{{ . | markdownify }}</p>
+              {{ end }}
+            {{ end }}
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<section class="site-expertise">
-  <div class="container">
-    <div class="row">
-      {{ with .Params.expertise_title }}
-      <div class="col-md-5">
-        <div class="section-title">
-          <h2>{{ . }}</h2>
-        </div>
-      </div>
-      {{ end }}
-      <div class="col-md-6">
-        <ul class="site-expertise-list">
-          {{ range .Params.expertise_sectors }}
-          <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{ partial "clients.html" . }}
-
-{{ partial "team.html" . }}
 
 {{ partial "call-to-action.html" . }}
 

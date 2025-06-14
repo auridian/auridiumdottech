@@ -838,4 +838,53 @@ body, html {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+}
+
+// About Page Specific Styling
+.about-content {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $neon-blue;
+    text-shadow: 0 0 5px $neon-blue,
+                 0 0 10px $neon-blue,
+                 0 0 20px $neon-blue;
+    text-align: center;
+    line-height: 1.2;
+    
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .about-description {
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      color: $text-color;
+      text-align: justify;
+      
+      &:first-child {
+        font-size: 1.3rem;
+        color: $neon-blue;
+        font-weight: 400;
+        text-shadow: 0 0 5px rgba($neon-blue, 0.3);
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    strong {
+      color: $neon-pink;
+      text-shadow: 0 0 5px rgba($neon-pink, 0.3);
+    }
+    
+    em {
+      color: $neon-blue;
+      font-style: italic;
+    }
+  }
 } 
