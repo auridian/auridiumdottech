@@ -887,4 +887,46 @@ body, html {
       font-style: italic;
     }
   }
+}
+
+// How It Works Page Image Styling
+.how-it-works-hero {
+  margin: 3rem 0 4rem;
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba($neon-blue, 0.3);
+    box-shadow: 0 0 20px rgba($neon-blue, 0.2);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      border-color: $neon-blue;
+      box-shadow: 0 0 30px rgba($neon-blue, 0.4);
+      transform: translateY(-2px);
+    }
+  }
+  
+  figcaption {
+    margin-top: 1rem;
+    color: $text-secondary;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 5px rgba($neon-blue, 0.2);
+    
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      margin-top: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    margin: 2rem 0 3rem;
+  }
 } 

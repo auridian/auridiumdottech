@@ -36,7 +36,7 @@ Hack Nexus to its core. Make it truly yours.
 
 ## The Path Forward
 
-### Phase 1: Epoch (March-April 02025)
+### Phase 1: Epoch (March-June 02025)
 - Core semantic memory system and Epoch creation
 - Basic local model integration for messy input processing with limited data types (logseq, caldav)
 - Goal, project, belief, observation, and entity tracking in conceptual and temporal dimensions
@@ -44,7 +44,7 @@ Hack Nexus to its core. Make it truly yours.
 - Basic dashboard functional
 - Begin Nexus Alpha testing program with first cohort
 
-### Phase 2: nex/acc part 1 (May-Summer 02025)
+### Phase 2: nex/acc part 1 (July-September 02025)
 
 - Raise funds to grow private LLM outsourcing option, fund further development
 - Create optional marketplace / repository for Nexi and users to share integrations and save time / effort integrating

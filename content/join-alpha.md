@@ -21,58 +21,16 @@ Be among the first to experience the future of personal AI. Our alpha program is
 - 20GB free disk space
 - Internet connection for updates, commercial tool calls, information fetching, and more
 
-## Sign Up for Alpha Access
+## Join our info list
 
-FORM COMING SOON (Last edited: April 8, 02025)
+Please fill out this quick form to stay tuned when Nexus launches!: [Form](https://form.jotform.com/251666115382053){target="_blank"}
 
-<form action="https://formspree.io/f/your-form-id" method="POST" class="alpha-form">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="occupation">Occupation</label>
-    <input type="text" id="occupation" name="occupation" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="use-case">How will you use Nexus?</label>
-    <textarea id="use-case" name="use-case" rows="4" required></textarea>
-  </div>
-  
-  <div class="form-group">
-    <label for="experience">Technical Experience Level</label>
-    <select id="experience" name="experience" required>
-      <option value="">Select an option</option>
-      <option value="beginner">Beginner</option>
-      <option value="intermediate">Intermediate</option>
-      <option value="advanced">Advanced</option>
-      <option value="expert">Expert</option>
-    </select>
-  </div>
-  
-  <button type="submit" class="btn-primary">Submit Application</button>
-</form>
-
-## Join Our Community
-
-While waiting for alpha access, join our growing community:
-
-COMING SOON -- Stay tuned!
-<!-- - [Discord Server](https://discord.gg/auridium)
-- [GitHub Repository](https://github.com/auridium)
-- [Twitter Updates](https://twitter.com/auridium) -->
+Estimated launch: end of June 02025. (last updated: June 16, 02025)
 
 ## FAQ
 
 ### How long is the alpha program?
-The alpha program will run for approximately 3 months, starting at the end of April 02025, with regular updates and improvements based on user feedback.
+The alpha program will run for approximately 3 months, starting at the end of June 02025, with regular updates and improvements based on user feedback.
 
 ### Will I need to pay for the alpha?
 No, alpha access is completely free. We're focused on gathering feedback and improving the product.

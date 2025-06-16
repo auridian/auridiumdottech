@@ -3,6 +3,8 @@ title: "How It Works"
 description: "Your Personal AI Ecosystem"
 ---
 
+{{< figure src="/images/memorymgr.png" alt="Nexus Memory Manager" caption="Nexus creates structure out of the mess of life. This is the second version of the memory manager." class="how-it-works-hero" >}}
+
 ## Semantic Memory
 
 Nexus builds a deep understanding of your world through advanced semantic memory. It learns from your interactions, preferences, and workflows to become truly personalized to your needs.
