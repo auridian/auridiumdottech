@@ -1,33 +1,19 @@
 ---
 title: "About Us [02025]"
 date: 2025-06-12T18:19:33+06:00
-heading : "Auridium Technologies: no more bs work"
+heading : "Auridium Technologies"
 description : |
-  Auridium is the technology company and legal infrastructural arm of Milo J. Hooper. 
+  Auridium Technologies is a founder-led technical lab and engineering practice building AI systems, automation infrastructure, websites, and bespoke technical tools.
 
-  The current objective of Auridium is to create the infrastructure required to realize the Sovereign Economic Agent. 
+  Auridium is the umbrella for our products, consulting work, engineering experiments, and broader economic activity. Some projects, including Conducio, receive their own dedicated domains as they mature. This site is the parent map: what we do, what we can build, and how the pieces fit together.
 
-  This will require a stack of technologies and tools, some of which already exist, and many of which need to be combined and/or constructed.
+  We work across domains because real problems rarely respect clean category boundaries. A useful system might involve a website, an API integration, a private AI workflow, a dashboard, a machine, a process, a spreadsheet, and a person who has been forced to hold the entire thing together manually. Auridium exists to turn that kind of mess into working infrastructure.
 
-  Auridium eschews traditional frameworks and workflows in favor of rapid, AI-first development.
+  The long-term thesis remains the Sovereign Economic Agent: tools that let individuals and small teams operate with more memory, agency, automation, and leverage. Conducio is the flagship expression of that thesis, but not the only one.
 
-  The primary element of the Sovereign Economic Agent stack shall be Conducio (formerly Nexus), a private AI system for offloading cognitive overhead. It shall serve as the ultimate cognitive and agentic substrate from which an individual human may orchestrate automatic agents to perform tasks on their behalf. 
+  Conducio is a private AI platform for memory, workflow orchestration, tool integration, and agentic systems. It is both a product and part of our internal build substrate: a system for creating and maintaining other systems.
 
-  You can think of Conducio as a wholesale, private/local-option replacement for numerous existing startups and services. Your memory. Your hardware. Your data. Your control. You are the sovereign.
+  Auridium also supports practical client work: website development, small-business technology integration, custom AI systems, software automation, process automation, and broader engineering consulting. Much of this work is private or NDA-bound, so the public portfolio is intentionally selective.
 
-  Conducio will never sell your data; your implementation becomes yours upon setup. We don't even store your data unless you choose, and even then, it will be e2e encrypted. Eventually Auridium will offer off-the-shelf solutions for various use cases, but for now, it is a white glove / bespoke setup service.
-
-  Conducio can integrate with your existing workflows and needs, reducing the overhead needed for the individual in the 21st century to operate a solo business or side hustle. You are selling your skill, your labor - why waste time, effort, and money on endless overhead?
-
-  The only subscription service that Conducio is considering offering is for (encrypted, zero-access) hosting/storage of your agents and data. We firmly believe in the philosophy of "buy it for life." I don't care about "MRR" or "ARR". I am trying to enable the future.
-
-  Conducio will operate primarily in the background, and only as interactively as you want. At Auridium, we don't think that chat is the future of AI. It should be seamless, acting on your behalf, only interrupting you to escalate particular issues or queries of interest.
-
-  Conducio is currently in early alpha stage. Stay tuned for further opportunities to get involved. 
-
-  Auridium Technologies started off as a technology contracting company for mechanical automation, process scale up, and mechanical amplification of labor.
-
-  On the side, depending on the timeline for Conducio and the rest of the Sovereign Economic Agent stack, we may also offer Solidworks plugins. 
-
-  Let's do business. 
+  We are comfortable with weird problems, early-stage ambiguity, and cross-domain technical work. The style is pragmatic: understand the real operating path, identify the leverage point, and build something that works.
 ---

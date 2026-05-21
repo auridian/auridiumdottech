@@ -1,6 +1,6 @@
 baseURL       = "https://auridium.tech/"
 languageCode  = "en-us"
-title         = "Conducio - Autonomous Hyperindividualized AI"
+title         = "Auridium Technologies"
 theme         = "roxo-hugo-custom-local"
 summarylength = 25
 
@@ -12,20 +12,20 @@ summarylength = 25
     url     = ""
     weight  = 1
   [[menu.nav]]
-    name    = "How It Works"
-    url     = "how-it-works"
+    name    = "Capabilities"
+    url     = "capabilities"
     weight  = 2
   [[menu.nav]]
-    name    = "Who It's For"
-    url     = "who-its-for"
+    name    = "Projects"
+    url     = "projects"
     weight  = 3
   [[menu.nav]]
-    name    = "Roadmap"
-    url     = "roadmap"
+    name    = "About"
+    url     = "about"
     weight  = 4
   [[menu.nav]]
-    name    = "Join Alpha"
-    url     = "join-alpha"
+    name    = "Work With Us"
+    url     = "work-with-us"
     weight  = 5
 
 # Site Params
@@ -37,7 +37,7 @@ summarylength = 25
   custom_stylesheets = ["scss/custom.scss"]
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Conducio: Hyper-individualized, self-improving AI system that learns your world and helps you run it"
+  description = "Auridium Technologies builds practical AI systems, automation infrastructure, websites, and bespoke technical tools for independent operators, startups, and small businesses."
   author = "Auridium Technologies LLC"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
@@ -45,70 +45,70 @@ summarylength = 25
   # Navbar Action Button
   [params.navAction]
     status  = true
-    name    = "Join Alpha"
-    url     = "join-alpha"
+    name    = "Work With Us"
+    url     = "work-with-us"
 
   # Banner Section
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/cyberpunk-bg.jpg"
-    heading               = "Conducio: Autonomous Hyper-Individualized AI"
-    tagline               = "Self-improving AI system that learns your world and helps you run it"
-    primary_button        = "Join the Alpha"
-    primary_button_url    = "join-alpha"
-    secondary_button      = "Learn More"
-    secondary_button_url  = "how-it-works"
+    heading               = "Auridium Technologies"
+    tagline               = "We build AI systems, automation infrastructure, websites, and practical engineering tools for operators who have outgrown off-the-shelf software."
+    primary_button        = "Work With Us"
+    primary_button_url    = "work-with-us"
+    secondary_button      = "Explore Projects"
+    secondary_button_url  = "projects"
 
   [params.features]
     enable = true
-    title = "How It Works"
-    subtitle = "Your Personal AI Ecosystem"
+    title = "What We Build"
+    subtitle = "Everything Tech"
     [[params.features.item]]
-      title = "Semantic Memory"
-      description = "Builds a deep understanding of your world, your preferences, and your workflow"
+      title = "Custom AI Systems"
+      description = "Workflow-aware assistants, retrieval systems, agents, and interfaces for your use cases."
       icon = "microchip"
     [[params.features.item]]
-      title = "Privacy Conscious"
-      description = "Conducio can run on your hardware, optionally outsourcing tasks with sensitive information redacted. Conducio will NEVER sell your data."
-      icon = "shield"
-    [[params.features.item]]
-      title = "Tool Integration"
-      description = "Seamlessly connects with your existing tools and workflows, and builds and recommends new ones as needed."
+      title = "Automation & Integration"
+      description = "Software, hardware, and process automation that connects tools, machines, data, and people."
       icon = "cogs"
+    [[params.features.item]]
+      title = "Websites & Technical Infrastructure"
+      description = "Websites, dashboards, internal tools, and operational systems that keep your business moving."
+      icon = "terminal"
 
   [params.audience]
     enable = true
-    title = "Who It's For"
-    subtitle = "Built for Those Who Think Different"
+    title = "Flagship Project"
+    subtitle = "Conducio is the first major expression of the broader Auridium thesis."
     [[params.audience.item]]
-      title = "Indie Hackers"
-      description = "Automate your workflow and focus on what matters"
+      title = "Conducio"
+      description = "A private AI platform for memory, workflow orchestration, agents, and integration with the world."
       icon = "rocket"
     [[params.audience.item]]
-      title = "Engineers"
-      description = "Streamline your development process with AI assistance"
-      icon = "terminal"
+      title = "Systems That Build Systems"
+      description = "Conducio is a custom framework we use to create, maintain, and coordinate additional tools and projects."
+      icon = "dashboard"
     [[params.audience.item]]
-      title = "The Weird Ones"
-      description = "Conducio grows with you and builds the user experience that only you could come up with."
+      title = "Sovereign Economic Agent Stack"
+      description = "Auridium is building toward tools that give individuals and small teams more autonomy, memory, and leverage."
       icon = "lightbulb-o"
 
   [params.roadmap]
     enable = true
-    title = "What's Coming"
-    subtitle = "The Future of Personal AI"
+    title = "Who We Help"
+    subtitle = "Founder-led, pragmatic, and comfortable with weird technical problems."
     [[params.roadmap.item]]
-      title = "Supervisor"
-      description = "Advanced task management and automation"
-      icon = "android"
+      title = "Small Businesses"
+      description = "Modernize operations, automate repetitive work, connect fragmented systems, and build useful web infrastructure."
+      icon = "building"
     [[params.roadmap.item]]
-      title = "Conducio Dashboard"
-      description = "Retro-cyberpunk interface for managing your AI ecosystem"
-      icon = "dashboard"
+      title = "Startups & Independent Operators"
+      description = "Move from idea to working technical system without monthslong corporate process sprawl."
+      icon = "bolt"
     [[params.roadmap.item]]
-      title = "Plugin System"
-      description = "Extend Conducio with custom tools and integrations"
-      icon = "puzzle-piece"
+      title = "Engineering-Heavy Teams"
+      description = "Prototype, integrate, and troubleshoot across software, AI, automation, and process-oriented technical systems."
+      icon = "wrench"
 
   [params.footer]
     params.footer.qr_print = false
@@ -118,24 +118,24 @@ summarylength = 25
     [params.footer.sitemap]
       title   = "Sitemap"
       [[params.footer.sitemap.link]]
-        name = "How It Works"
-        url  = "how-it-works"
+        name = "Capabilities"
+        url  = "capabilities"
       [[params.footer.sitemap.link]]
-        name = "Who It's For"
-        url  = "who-its-for"
+        name = "Projects"
+        url  = "projects"
       [[params.footer.sitemap.link]]
-        name = "Roadmap"
-        url  = "roadmap"
+        name = "About"
+        url  = "about"
       [[params.footer.sitemap.link]]
-        name = "Join Alpha"
-        url  = "join-alpha"
-    [params.footer.social]
-      title   = "Connect With Us"
-      [[params.footer.social.link]]
-        name = "Discord"
-        url  = "https://discord.gg/auridium"
-      [[params.footer.social.link]]
-        name = "GitHub"
-        url  = "https://github.com/auridium"
+        name = "Work With Us"
+        url  = "work-with-us"
+  #  [params.footer.social]
+  #    title   = "Connect With Us"
+  #    [[params.footer.social.link]]
+  #      name = "Discord"
+  #      url  = "https://discord.gg/auridium"
+  #    [[params.footer.social.link]]
+  #      name = "GitHub"
+  #      url  = "https://github.com/auridium"
     [params.footer.back_to_top]
       description = "back to top"

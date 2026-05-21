@@ -1,30 +1,34 @@
-// Cyberpunk Theme Variables
-$neon-pink: #ff2a6d;
-$neon-blue: #05d9e8;
-$neon-purple: #b967ff;
-$dark-bg: #0a0a0f;
-$darker-bg: #050507;
+// Auridium technical-lab variables
+$neon-pink: #ff4f88;
+$neon-blue: #38d7ff;
+$neon-purple: #9b7cff;
+$amber: #f4b860;
+$steel: #8ea4b8;
+$dark-bg: #0b0f12;
+$darker-bg: #050708;
+$panel-bg: #10171d;
 $text-color: #ffffff;
-$text-secondary: #b3b3b3;
+$text-secondary: #a8b5bf;
 
 // Global Styles
 body, html {
   background-color: $dark-bg !important;
   color: $text-color !important;
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .cyberpunk-theme {
-  background-color: $dark-bg;
+  background:
+    radial-gradient(circle at 18% 12%, rgba($neon-blue, 0.12), transparent 28rem),
+    radial-gradient(circle at 86% 18%, rgba($amber, 0.08), transparent 24rem),
+    linear-gradient(180deg, #0b0f12 0%, #071014 44%, #050708 100%);
   color: $text-color;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   // Neon Text Effect
   .neon-text {
-    text-shadow: 0 0 5px $neon-blue,
-                 0 0 10px $neon-blue,
-                 0 0 20px $neon-blue;
-    color: $neon-blue;
+    text-shadow: 0 0 14px rgba($neon-blue, 0.3);
+    color: #d7f8ff;
   }
 
   .neon-text-pink {
@@ -41,8 +45,8 @@ body, html {
     z-index: 1020;
     width: 100%;
     background-color: rgba($darker-bg, 0.75);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba($neon-blue, 0.15);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba($steel, 0.18);
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 
@@ -61,30 +65,30 @@ body, html {
     .nav-link {
       color: $text-color !important;
       &:hover {
-        color: $neon-blue !important;
+        color: $amber !important;
       }
     }
   }
 
   .site-navigation.nav-bg {
     background-color: rgba($darker-bg, 0.95);
-    border-bottom-color: rgba($neon-blue, 0.35);
+    border-bottom-color: rgba($amber, 0.32);
     box-shadow: 0 12px 30px rgba(#000, 0.45);
   }
 
   // Feature Cards
   .site-feature {
-    background: rgba($darker-bg, 0.5);
-    border: 1px solid rgba($neon-blue, 0.2);
-    border-radius: 8px;
+    background: rgba($panel-bg, 0.68);
+    border: 1px solid rgba($steel, 0.2);
+    border-radius: 2px;
     padding: 2rem;
     transition: all 0.3s ease;
     margin-bottom: 2rem;
     
     &:hover {
       transform: translateY(-5px);
-      border-color: $neon-blue;
-      box-shadow: 0 0 20px rgba($neon-blue, 0.2);
+      border-color: rgba($amber, 0.65);
+      box-shadow: 0 24px 50px rgba(#000, 0.28);
     }
     
     .icon {
@@ -125,7 +129,7 @@ body, html {
   // Buttons
   .btn {
     &-primary {
-      background: linear-gradient(45deg, $neon-blue, $neon-purple) !important;
+      background: linear-gradient(135deg, $amber, #f06f45) !important;
       border: none !important;
       color: $text-color !important;
       padding: 0.75rem 1.5rem !important;
@@ -135,21 +139,21 @@ body, html {
       
       &:hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 0 15px rgba($neon-blue, 0.5) !important;
+        box-shadow: 0 16px 35px rgba($amber, 0.22) !important;
       }
     }
 
     &-secondary {
       background: transparent !important;
-      border: 2px solid $neon-blue !important;
-      color: $neon-blue !important;
+      border: 2px solid rgba($neon-blue, 0.72) !important;
+      color: #d7f8ff !important;
       padding: 0.75rem 1.5rem !important;
       border-radius: 4px !important;
       font-weight: 600 !important;
       transition: all 0.3s ease !important;
       
       &:hover {
-        background: rgba($neon-blue, 0.1) !important;
+        background: rgba($neon-blue, 0.08) !important;
         transform: translateY(-2px) !important;
       }
     }
@@ -158,7 +162,7 @@ body, html {
   // Footer
   .site-footer {
     background-color: $darker-bg !important;
-    border-top: 1px solid rgba($neon-blue, 0.2) !important;
+    border-top: 1px solid rgba($steel, 0.22) !important;
     padding: 2rem 0 !important;
     margin-top: 4rem !important;
     
@@ -177,12 +181,27 @@ body, html {
       margin-bottom: 2rem;
 
       &-title {
-        color: $neon-blue !important;
+        color: #eef5f7 !important;
         margin-bottom: 1.5rem;
+        font-size: 0.85rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
       }
 
       &-description {
         color: $text-secondary !important;
+
+        a {
+          color: #d7f8ff !important;
+          border-bottom: 1px solid rgba($neon-blue, 0.24);
+          text-decoration: none;
+
+          &:hover {
+            color: $amber !important;
+            border-bottom-color: rgba($amber, 0.72);
+            text-shadow: none;
+          }
+        }
       }
 
       &-links {
@@ -191,16 +210,30 @@ body, html {
         margin: 0;
 
         li {
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.65rem;
           
           a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
             color: $text-secondary !important;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: color 0.2s ease, transform 0.2s ease;
+
+            &::before {
+              content: '/';
+              color: rgba($steel, 0.55);
+              transition: color 0.2s ease;
+            }
             
             &:hover {
-              color: $neon-blue !important;
-              text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+              color: $amber !important;
+              text-shadow: none;
+              transform: translateX(2px);
+
+              &::before {
+                color: rgba($amber, 0.8);
+              }
             }
           }
         }
@@ -215,14 +248,182 @@ body, html {
       color: $text-secondary !important;
 
       a {
-        color: $neon-blue !important;
+        color: #d7f8ff !important;
         text-decoration: none;
-        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba($neon-blue, 0.24);
+        transition: color 0.2s ease, border-color 0.2s ease;
         
         &:hover {
-          text-shadow: 0 0 5px rgba($neon-blue, 0.5);
+          color: $amber !important;
+          border-bottom-color: rgba($amber, 0.72);
+          text-shadow: none;
         }
       }
+    }
+
+    .site-footer-widget-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: $text-secondary !important;
+      text-decoration: none;
+      border: 1px solid rgba($steel, 0.2);
+      padding: 0.75rem 0.85rem;
+      background: rgba($panel-bg, 0.45);
+      transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+
+      img {
+        width: 14px;
+        height: 14px;
+        filter: grayscale(1) brightness(1.6) sepia(0.2) saturate(0.4);
+        opacity: 0.72;
+        transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      p {
+        margin: 0;
+        color: inherit !important;
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        color: $amber !important;
+        border-color: rgba($amber, 0.62);
+        background: rgba($amber, 0.08);
+        transform: translateY(-2px);
+        text-shadow: none;
+
+        img {
+          opacity: 1;
+          transform: translateY(-1px);
+          filter: brightness(0) saturate(100%) invert(78%) sepia(51%) saturate(534%) hue-rotate(344deg) brightness(101%) contrast(91%);
+        }
+      }
+    }
+  }
+}
+
+// Auridium lab hero
+.lab-hero {
+  position: relative;
+  min-height: clamp(560px, 92vh, 880px);
+  padding: clamp(5rem, 8vw, 7rem) 0;
+  background-color: $dark-bg;
+  background-image:
+    linear-gradient(rgba($steel, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($steel, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at 72% 22%, rgba($neon-blue, 0.18), transparent 22rem),
+    radial-gradient(circle at 18% 72%, rgba($amber, 0.12), transparent 26rem),
+    var(--hero-bg);
+  background-size: 48px 48px, 48px 48px, auto, auto, cover;
+  background-position: center;
+  background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(110deg, rgba($darker-bg, 0.96) 0%, rgba($dark-bg, 0.88) 46%, rgba($darker-bg, 0.72) 100%),
+      repeating-linear-gradient(90deg, rgba($steel, 0.04) 0 1px, transparent 1px 80px);
+    backdrop-filter: blur(5px) saturate(0.8);
+  }
+
+  &::after {
+    content: 'AT-LAB / SYSTEMS / FIELDWORK';
+    position: absolute;
+    right: clamp(1rem, 4vw, 4rem);
+    bottom: clamp(1rem, 4vw, 3rem);
+    color: rgba($steel, 0.32);
+    font-size: 0.75rem;
+    letter-spacing: 0.28em;
+    writing-mode: vertical-rl;
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.lab-hero__panel {
+  max-width: 920px;
+  margin: 0 auto;
+  background:
+    linear-gradient(145deg, rgba($panel-bg, 0.9), rgba($darker-bg, 0.78));
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgba($steel, 0.28);
+  border-left: 4px solid rgba($amber, 0.9);
+  border-radius: 2px;
+  box-shadow: 0 30px 80px rgba(#000, 0.45);
+  backdrop-filter: blur(16px);
+}
+
+.lab-hero__kicker {
+  color: $amber;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  margin-bottom: 1.1rem;
+  text-shadow: none;
+}
+
+.lab-hero__headline {
+  color: #f6fbff;
+  font-size: clamp(2.8rem, 7vw, 5.75rem);
+  line-height: 0.95;
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.06em;
+  text-shadow: 0 0 24px rgba($neon-blue, 0.22);
+}
+
+.lab-hero__intro {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  color: $text-secondary;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
+}
+
+.lab-section {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, transparent, rgba($darker-bg, 0.35)),
+      radial-gradient(circle at 10% 10%, rgba($neon-blue, 0.06), transparent 22rem);
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.lab-section--projects {
+  background:
+    linear-gradient(rgba($neon-blue, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($neon-blue, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 70% 20%, rgba($neon-purple, 0.11), transparent 25rem);
+  background-size: 44px 44px, 44px 44px, auto;
+
+  .section-card--project {
+    border-color: rgba($neon-blue, 0.28);
+
+    &:hover {
+      border-color: rgba($neon-blue, 0.75);
+      box-shadow: 0 24px 55px rgba(#000, 0.32), inset 3px 0 0 rgba($neon-blue, 0.8);
     }
   }
 }
@@ -230,9 +431,11 @@ body, html {
 // Section cards
 .section-card {
   display: block;
-  background: rgba($darker-bg, 0.7);
-  border: 1px solid rgba($neon-blue, 0.2);
-  border-radius: 0.75rem;
+  background:
+    linear-gradient(145deg, rgba($panel-bg, 0.92), rgba($darker-bg, 0.82)),
+    linear-gradient(90deg, rgba($neon-blue, 0.08), transparent);
+  border: 1px solid rgba($steel, 0.2);
+  border-radius: 2px;
   padding: 2rem;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
@@ -241,8 +444,8 @@ body, html {
 
   &:hover {
     transform: translateY(-6px);
-    border-color: $neon-blue;
-    box-shadow: 0 0 20px rgba($neon-blue, 0.25);
+    border-color: rgba($amber, 0.66);
+    box-shadow: 0 24px 55px rgba(#000, 0.32), inset 3px 0 0 rgba($amber, 0.75);
     text-decoration: none;
   }
 }
@@ -252,7 +455,7 @@ body, html {
 
   .fa {
     font-size: 3rem;
-    color: $text-color;
+    color: $amber;
     margin-bottom: 1.5rem;
     transition: color 0.3s ease, text-shadow 0.3s ease;
   }
@@ -274,12 +477,12 @@ body, html {
 .section-card:hover .section-card-content {
   .fa {
     color: $neon-blue;
-    text-shadow: 0 0 10px rgba($neon-blue, 0.5);
+    text-shadow: 0 0 10px rgba($neon-blue, 0.25);
   }
 
   h3 {
-    color: $neon-blue;
-    text-shadow: 0 0 5px $neon-blue;
+    color: #d7f8ff;
+    text-shadow: 0 0 8px rgba($neon-blue, 0.22);
   }
 }
 
@@ -287,7 +490,17 @@ body, html {
 .site-sections,
 .cyberpunk-section {
   padding: clamp(3.5rem, 6vw, 5rem) 0;
-  background-color: $dark-bg;
+  background:
+    linear-gradient(rgba($steel, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($steel, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.cyberpunk-section {
+  background:
+    linear-gradient(rgba($steel, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($steel, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
 }
 
 .section-title {
@@ -295,10 +508,10 @@ body, html {
   margin-bottom: 3rem;
 
   h2 {
-    color: $neon-blue;
+    color: #d7f8ff;
     font-size: clamp(2rem, 4vw, 2.75rem);
     margin-bottom: 1rem;
-    text-shadow: 0 0 5px $neon-blue, 0 0 10px $neon-blue, 0 0 20px $neon-blue;
+    text-shadow: 0 0 14px rgba($neon-blue, 0.25);
   }
 
   p {
@@ -307,13 +520,17 @@ body, html {
   }
 }
 
-// Cyberpunk hero overrides
+// Legacy cyberpunk hero overrides retained for old theme compatibility
 .cyberpunk-hero {
   position: relative;
   min-height: clamp(540px, 100vh, 960px);
   padding: clamp(4rem, 6vw, 6rem) 0;
   background-color: $dark-bg;
-  background-image: var(--hero-bg);
+  background-image:
+    linear-gradient(rgba($steel, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($steel, 0.05) 1px, transparent 1px),
+    var(--hero-bg);
+  background-size: 52px 52px, 52px 52px, cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -325,8 +542,10 @@ body, html {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba($darker-bg, 0.85), rgba($darker-bg, 0.6));
-    backdrop-filter: blur(6px);
+    background:
+      linear-gradient(135deg, rgba($darker-bg, 0.92), rgba($dark-bg, 0.72)),
+      radial-gradient(circle at 50% 10%, rgba($neon-blue, 0.1), transparent 28rem);
+    backdrop-filter: blur(5px) saturate(0.8);
   }
 
   .container {
@@ -336,28 +555,38 @@ body, html {
 }
 
 .cyberpunk-hero__panel {
-  background: rgba($darker-bg, 0.7);
+  background:
+    linear-gradient(145deg, rgba($panel-bg, 0.86), rgba($darker-bg, 0.78));
   padding: clamp(2rem, 5vw, 3.5rem);
-  border-radius: 0.75rem;
-  border: 1px solid rgba($neon-blue, 0.25);
+  border-radius: 2px;
+  border: 1px solid rgba($steel, 0.25);
+  border-left: 4px solid rgba($amber, 0.86);
   box-shadow: 0 20px 45px rgba(#000, 0.4);
   backdrop-filter: blur(12px);
 }
 
 .cyberpunk-hero__tagline {
-  color: $text-color;
+  color: $amber;
   font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   margin-bottom: 1rem;
-  text-shadow: 0 0 5px rgba($neon-blue, 0.35), 0 0 10px rgba($neon-blue, 0.2);
+  text-shadow: 0 0 9px rgba($amber, 0.18);
 }
 
 .cyberpunk-hero__headline {
   font-size: clamp(2.5rem, 5vw, 3.75rem);
   margin-bottom: 1.5rem;
-  color: $neon-blue;
-  text-shadow: 0 0 5px $neon-blue, 0 0 10px $neon-blue, 0 0 20px $neon-blue;
+  color: #f6fbff;
+  text-shadow: 0 0 22px rgba($neon-blue, 0.24);
+}
+
+.cyberpunk-hero__intro {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  color: $text-secondary;
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
 
 .site-hero-content-buttons {
@@ -407,6 +636,23 @@ body, html {
 
   .cyberpunk-hero__headline {
     font-size: 2.25rem;
+  }
+
+  .lab-hero {
+    min-height: auto;
+    padding: 6rem 0 4rem;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .lab-hero__panel {
+    margin: 0 1rem;
+  }
+
+  .lab-hero__headline {
+    font-size: 3rem;
   }
 }
 
@@ -476,18 +722,20 @@ body, html {
   max-width: 800px;
   margin: 6rem auto 2rem;
   padding: 2rem;
-  background: rgba($darker-bg, 0.7);
-  border: 1px solid rgba($neon-blue, 0.2);
-  border-radius: 8px;
+  background: rgba($panel-bg, 0.78);
+  border: 1px solid rgba($steel, 0.2);
+  border-left: 4px solid rgba($amber, 0.7);
+  border-radius: 2px;
   backdrop-filter: blur(10px);
   
   h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: $neon-blue;
-    text-shadow: 0 0 5px $neon-blue,
-                 0 0 10px $neon-blue,
-                 0 0 20px $neon-blue;
+    color: #f3f6f7;
+    text-shadow: none;
+    letter-spacing: -0.04em;
+    border-bottom: 1px solid rgba($steel, 0.24);
+    padding-bottom: 1rem;
   }
 
   .lead {
@@ -500,19 +748,17 @@ body, html {
   }
   
   h2 {
-    color: $neon-pink;
+    color: $amber;
     margin: 2.5rem 0 1rem;
     font-size: 2rem;
-    text-shadow: 0 0 5px $neon-pink,
-                 0 0 10px rgba($neon-pink, 0.5);
+    text-shadow: 0 0 8px rgba($amber, 0.18);
   }
   
   h3 {
-    color: $neon-blue;
+    color: #d7f8ff;
     margin: 2rem 0 1rem;
     font-size: 1.5rem;
-    text-shadow: 0 0 5px $neon-blue,
-                 0 0 10px rgba($neon-blue, 0.5);
+    text-shadow: 0 0 8px rgba($neon-blue, 0.2);
   }
   
   p {
@@ -536,19 +782,46 @@ body, html {
   }
   
   a {
-    color: $neon-blue;
+    color: #d7f8ff;
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
     
     &:hover {
-      color: $neon-pink;
-      text-shadow: 0 0 5px rgba($neon-pink, 0.5);
+      color: $amber;
+      text-shadow: none;
+    }
+  }
+
+  .project-cta {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.75rem 0 1.5rem;
+    padding: 0.8rem 1.1rem;
+    border: 1px solid rgba($amber, 0.58);
+    background: linear-gradient(135deg, rgba($amber, 0.18), rgba(#f06f45, 0.1));
+    color: #fff7e8;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+
+    &::after {
+      content: '>';
+      margin-left: 0.75rem;
+      color: $amber;
+    }
+
+    &:hover {
+      border-color: rgba($amber, 0.9);
+      color: #ffffff;
+      background: linear-gradient(135deg, rgba($amber, 0.28), rgba(#f06f45, 0.16));
+      transform: translateY(-1px);
     }
   }
   
   blockquote {
-    border-left: 4px solid $neon-blue;
+    border-left: 4px solid $amber;
     padding: 1rem 1.5rem;
     margin: 2rem 0;
     background: rgba($darker-bg, 0.5);
@@ -566,14 +839,14 @@ body, html {
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-family: 'Fira Code', monospace;
-    color: $neon-pink;
+    color: $amber;
   }
   
   pre {
     background: rgba($darker-bg, 0.8);
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid rgba($neon-blue, 0.2);
+    border: 1px solid rgba($steel, 0.2);
     overflow-x: auto;
     margin: 1.5rem 0;
     
@@ -594,9 +867,9 @@ body, html {
     right: 0;
     bottom: 0;
     background: 
-      linear-gradient(rgba($neon-blue, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba($neon-blue, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
+      linear-gradient(rgba($steel, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba($steel, 0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
     pointer-events: none;
     z-index: -1;
     opacity: 0.5;
@@ -715,20 +988,17 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba($darker-bg, 0.8),
-      rgba($darker-bg, 0.6)
-    );
+    background: linear-gradient(135deg, rgba($darker-bg, 0.9), rgba($dark-bg, 0.68));
   }
   
   .site-hero-content {
     position: relative;
     z-index: 2;
-    background: rgba($darker-bg, 0.7);
+    background: rgba($panel-bg, 0.82);
     padding: 3rem;
-    border-radius: 8px;
-    border: 1px solid rgba($neon-blue, 0.2);
+    border-radius: 2px;
+    border: 1px solid rgba($steel, 0.22);
+    border-left: 4px solid rgba($amber, 0.8);
     backdrop-filter: blur(10px);
     max-width: 800px;
     margin: 0 auto;
@@ -736,25 +1006,8 @@ body, html {
     h1 {
       font-size: 3.5rem;
       margin-bottom: 1.5rem;
-      color: $neon-blue;
-      text-shadow: 0 0 5px $neon-blue,
-                   0 0 10px $neon-blue,
-                   0 0 20px $neon-blue;
-      animation: textGlow 2s ease-in-out infinite alternate;
-      
-      @keyframes textGlow {
-        from {
-          text-shadow: 0 0 5px $neon-blue,
-                       0 0 10px $neon-blue,
-                       0 0 20px $neon-blue;
-        }
-        to {
-          text-shadow: 0 0 10px $neon-blue,
-                       0 0 20px $neon-blue,
-                       0 0 30px $neon-blue,
-                       0 0 40px rgba($neon-blue, 0.5);
-        }
-      }
+      color: #f6fbff;
+      text-shadow: 0 0 20px rgba($neon-blue, 0.24);
       
       @media (max-width: 768px) {
         font-size: 2.5rem;
@@ -762,13 +1015,12 @@ body, html {
     }
     
     h5 {
-      color: $text-color;
+      color: $amber;
       font-size: 1.25rem;
       margin-bottom: 1rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      text-shadow: 0 0 5px rgba($neon-blue, 0.5),
-                   0 0 10px rgba($neon-blue, 0.3);
+      text-shadow: 0 0 8px rgba($amber, 0.18);
     }
     
     .site-hero-content-buttons {
@@ -798,12 +1050,10 @@ body, html {
     margin-bottom: 3rem;
     
     h2 {
-      color: $neon-blue;
+      color: #d7f8ff;
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      text-shadow: 0 0 5px $neon-blue,
-                   0 0 10px $neon-blue,
-                   0 0 20px $neon-blue;
+      text-shadow: 0 0 14px rgba($neon-blue, 0.22);
     }
     
     p {
@@ -817,9 +1067,9 @@ body, html {
 
 .section-card {
   display: block;
-  background: rgba($darker-bg, 0.7);
-  border: 1px solid rgba($neon-blue, 0.2);
-  border-radius: 8px;
+  background: rgba($panel-bg, 0.88);
+  border: 1px solid rgba($steel, 0.2);
+  border-radius: 2px;
   padding: 2rem;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
@@ -828,19 +1078,18 @@ body, html {
   
   &:hover {
     transform: translateY(-5px);
-    border-color: $neon-blue;
-    box-shadow: 0 0 20px rgba($neon-blue, 0.2);
+    border-color: rgba($amber, 0.66);
+    box-shadow: 0 24px 50px rgba(#000, 0.32);
     text-decoration: none;
     
     .fa {
       color: $neon-blue;
-      text-shadow: 0 0 10px $neon-blue;
+      text-shadow: 0 0 10px rgba($neon-blue, 0.28);
     }
     
     h3 {
-      color: $neon-blue;
-      text-shadow: 0 0 5px $neon-blue,
-                   0 0 10px rgba($neon-blue, 0.5);
+      color: #d7f8ff;
+      text-shadow: 0 0 8px rgba($neon-blue, 0.2);
     }
   }
   
@@ -881,12 +1130,13 @@ body, html {
   h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: $neon-blue;
-    text-shadow: 0 0 5px $neon-blue,
-                 0 0 10px $neon-blue,
-                 0 0 20px $neon-blue;
+    color: #f3f6f7;
+    text-shadow: none;
     text-align: center;
     line-height: 1.2;
+    letter-spacing: -0.04em;
+    border-bottom: 1px solid rgba($steel, 0.24);
+    padding-bottom: 1rem;
     
     @media (max-width: 768px) {
       font-size: 2.5rem;
@@ -903,9 +1153,9 @@ body, html {
       
       &:first-child {
         font-size: 1.3rem;
-        color: $neon-blue;
+        color: #dbe6eb;
         font-weight: 400;
-        text-shadow: 0 0 5px rgba($neon-blue, 0.3);
+        text-shadow: none;
       }
       
       &:last-child {
@@ -914,8 +1164,8 @@ body, html {
     }
     
     strong {
-      color: $neon-pink;
-      text-shadow: 0 0 5px rgba($neon-pink, 0.3);
+      color: $amber;
+      text-shadow: none;
     }
     
     em {
