@@ -3,11 +3,11 @@ title: "How It Works"
 description: "Your Personal AI Ecosystem"
 ---
 
-{{< figure src="/images/memorymgr.png" alt="Nexus Memory Manager" caption="Nexus creates structure out of the mess of life. This is the second version of the memory manager." class="how-it-works-hero" >}}
+{{< figure src="/images/memorymgr.png" alt="Conducio Memory Manager" caption="Conducio creates structure out of the mess of life. This is the second version of the memory manager." class="how-it-works-hero" >}}
 
 ## Semantic Memory
 
-Nexus builds a deep understanding of your world through advanced semantic memory. It learns from your interactions, preferences, and workflows to become truly personalized to your needs.
+Conducio builds a deep understanding of your world through advanced semantic memory. It learns from your interactions, preferences, and workflows to become truly personalized to your needs.
 
 ### Key Features:
 - **Contextual Understanding**: Grasps the nuances of your work environment
@@ -16,7 +16,7 @@ Nexus builds a deep understanding of your world through advanced semantic memory
 
 ## Local Models
 
-Your data stays on your machine. Nexus can run entirely locally, ensuring your privacy and security while maintaining high performance. If you need extra performance from commerical LLMs, Nexus can redact any critical or sensitive information before submitting any of your content to the Internet.
+Your data stays on your machine. Conducio can run entirely locally, ensuring your privacy and security while maintaining high performance. If you need extra performance from commerical LLMs, Conducio can redact any critical or sensitive information before submitting any of your content to the Internet.
 
 ### Benefits:
 - **Complete Privacy**: Your data never leaves your device unless you authorize it to.
@@ -25,7 +25,7 @@ Your data stays on your machine. Nexus can run entirely locally, ensuring your p
 
 ## Tool Integration
 
-Nexus seamlessly connects with your existing tools and workflows, becoming a natural extension of your digital environment.
+Conducio seamlessly connects with your existing tools and workflows, becoming a natural extension of your digital environment.
 
 ### Integration Features:
 - **API Connectivity**: Works with your favorite tools
@@ -34,9 +34,9 @@ Nexus seamlessly connects with your existing tools and workflows, becoming a nat
 
 ## Getting Started
 
-1. **Download**: Get the latest version of Nexus
+1. **Download**: Get the latest version of Conducio
 2. **Configure**: Set up your preferences and connect your tools
-3. **Learn**: Let Nexus learn from your workflow
+3. **Learn**: Let Conducio learn from your workflow
 4. **Automate**: Start automating tasks and improving productivity
 
 Ready to experience the future of personal AI? [Join the Alpha](/join-alpha) today! 

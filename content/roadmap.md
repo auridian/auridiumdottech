@@ -1,6 +1,6 @@
 ---
 title: "Roadmap"
-description: "The Evolution of Nexus"
+description: "The Evolution of Conducio"
 ---
 
 ## In Development
@@ -15,8 +15,8 @@ Your AI co-pilot that learns how you think and works the way you do.
 - Understands commands in plain language
 - Keeps you on track without getting in your way
 
-### Nexus Dashboard
-An adaptive, interactive, retro-cyberpunk theme dashboard for interfacing with your Nexus.
+### Conducio Dashboard
+An adaptive, interactive, retro-cyberpunk theme dashboard for interfacing with your Conducio.
 
 **Features:**
 - Live system monitoring with *style*
@@ -26,12 +26,12 @@ An adaptive, interactive, retro-cyberpunk theme dashboard for interfacing with y
 - Runs on anything with a screen
 
 ### Neural Links
-Hack Nexus to its core. Make it truly yours.
+Hack Conducio to its core. Make it truly yours.
 
 **Powers:**
 - Hook into any tool/system/workflow you use already
 - Self-extending: identifies missing capabilities and tools and generates them
-- Share workflows on the Nexus Market (if you choose)
+- Share workflows on the Conducio Market (if you choose)
 
 
 ## The Path Forward
@@ -42,19 +42,19 @@ Hack Nexus to its core. Make it truly yours.
 - Goal, project, belief, observation, and entity tracking in conceptual and temporal dimensions
 - Basic agent loops began, first tools generated, testing tool creation.
 - Basic dashboard functional
-- Begin Nexus Alpha testing program with first cohort
+- Begin Conducio Alpha testing program with first cohort
 
 ### Phase 2: nex/acc part 1 (July-September 02025)
 
 - Raise funds to grow private LLM outsourcing option, fund further development
 - Create optional marketplace / repository for Nexi and users to share integrations and save time / effort integrating
 - First paying customers, MVP launched if not before
-- Feedback from Nexus Alpha first cohort integrated; begin second cohort
+- Feedback from Conducio Alpha first cohort integrated; begin second cohort
 - Build community feedback / fora / etc.
 
 ### Phase 3: nex/acc part 2 (Fall 02025 and beyond)
 
-- The future is hard to predict. An early Nexus will probably have hit AGI by then. Sit back and enjoy the ride. 
+- The future is hard to predict. An early Conducio will probably have hit AGI by then. Sit back and enjoy the ride. 
 - (A whole lot of TBD)
 - Enterprise version
 - Light mode

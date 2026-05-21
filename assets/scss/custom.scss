@@ -36,10 +36,16 @@ body, html {
 
   // Navigation
   .site-navigation {
-    background-color: rgba($darker-bg, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-    border-bottom: 1px solid rgba($neon-blue, 0.2) !important;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    width: 100%;
+    background-color: rgba($darker-bg, 0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba($neon-blue, 0.15);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
     .navbar-brand {
       padding: 0;
       margin: 0;
@@ -58,6 +64,12 @@ body, html {
         color: $neon-blue !important;
       }
     }
+  }
+
+  .site-navigation.nav-bg {
+    background-color: rgba($darker-bg, 0.95);
+    border-bottom-color: rgba($neon-blue, 0.35);
+    box-shadow: 0 12px 30px rgba(#000, 0.45);
   }
 
   // Feature Cards
@@ -215,131 +227,149 @@ body, html {
   }
 }
 
-// Force section card styles with !important
+// Section cards
 .section-card {
-  display: block !important;
-  background: rgba($darker-bg, 0.7) !important;
-  border: 1px solid rgba($neon-blue, 0.2) !important;
-  border-radius: 8px !important;
-  padding: 2rem !important;
-  margin-bottom: 2rem !important;
-  transition: all 0.3s ease !important;
-  text-decoration: none !important;
-  backdrop-filter: blur(10px) !important;
-  
+  display: block;
+  background: rgba($darker-bg, 0.7);
+  border: 1px solid rgba($neon-blue, 0.2);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+
   &:hover {
-    transform: translateY(-5px) !important;
-    border-color: $neon-blue !important;
-    box-shadow: 0 0 20px rgba($neon-blue, 0.2) !important;
-    text-decoration: none !important;
-    
-    .fa {
-      color: $neon-blue !important;
-      text-shadow: 0 0 10px $neon-blue !important;
-    }
-    
-    h3 {
-      color: $neon-blue !important;
-      text-shadow: 0 0 5px $neon-blue,
-                   0 0 10px rgba($neon-blue, 0.5) !important;
-    }
+    transform: translateY(-6px);
+    border-color: $neon-blue;
+    box-shadow: 0 0 20px rgba($neon-blue, 0.25);
+    text-decoration: none;
   }
-  
-  .section-card-content {
-    text-align: center !important;
-    
-    .fa {
-      font-size: 3rem !important;
-      color: $text-color !important;
-      margin-bottom: 1.5rem !important;
-      transition: all 0.3s ease !important;
-    }
-    
-    h3 {
-      color: $text-color !important;
-      font-size: 1.5rem !important;
-      margin-bottom: 1rem !important;
-      transition: all 0.3s ease !important;
-    }
-    
-    p {
-      color: $text-secondary !important;
-      margin-bottom: 0 !important;
-      line-height: 1.6 !important;
-    }
+}
+
+.section-card-content {
+  text-align: center;
+
+  .fa {
+    font-size: 3rem;
+    color: $text-color;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  h3 {
+    color: $text-color;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  p {
+    color: $text-secondary;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
+
+.section-card:hover .section-card-content {
+  .fa {
+    color: $neon-blue;
+    text-shadow: 0 0 10px rgba($neon-blue, 0.5);
+  }
+
+  h3 {
+    color: $neon-blue;
+    text-shadow: 0 0 5px $neon-blue;
   }
 }
 
 // Site sections
-.site-sections {
-  padding: 5rem 0 !important;
-  background-color: $dark-bg !important;
-  
-  .section-title {
-    text-align: center !important;
-    margin-bottom: 3rem !important;
-    
-    h2 {
-      color: $neon-blue !important;
-      font-size: 2.5rem !important;
-      margin-bottom: 1rem !important;
-      text-shadow: 0 0 5px $neon-blue,
-                   0 0 10px $neon-blue,
-                   0 0 20px $neon-blue !important;
-    }
-    
-    p {
-      color: $text-secondary !important;
-      font-size: 1.25rem !important;
-    }
+.site-sections,
+.cyberpunk-section {
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  background-color: $dark-bg;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    color: $neon-blue;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px $neon-blue, 0 0 10px $neon-blue, 0 0 20px $neon-blue;
+  }
+
+  p {
+    color: $text-secondary;
+    font-size: 1.2rem;
   }
 }
 
 // Cyberpunk hero overrides
 .cyberpunk-hero {
-  position: relative !important;
-  min-height: 100vh !important;
-  background-size: cover !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  
+  position: relative;
+  min-height: clamp(540px, 100vh, 960px);
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background-color: $dark-bg;
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: linear-gradient(135deg, rgba($darker-bg, 0.8), rgba($darker-bg, 0.6)) !important;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba($darker-bg, 0.85), rgba($darker-bg, 0.6));
+    backdrop-filter: blur(6px);
   }
-  
-  .site-hero-content {
-    background: rgba($darker-bg, 0.7) !important;
-    padding: 3rem !important;
-    border-radius: 8px !important;
-    border: 1px solid rgba($neon-blue, 0.2) !important;
-    backdrop-filter: blur(10px) !important;
-    
-    h1 {
-      font-size: 3.5rem !important;
-      margin-bottom: 1.5rem !important;
-      color: $neon-blue !important;
-      text-shadow: 0 0 5px $neon-blue,
-                   0 0 10px $neon-blue,
-                   0 0 20px $neon-blue !important;
-      animation: textGlow 2s ease-in-out infinite alternate !important;
-    }
-    
-    h5 {
-      color: $text-color !important;
-      font-size: 1.25rem !important;
-      margin-bottom: 1rem !important;
-      text-transform: uppercase !important;
-      letter-spacing: 2px !important;
-      text-shadow: 0 0 5px rgba($neon-blue, 0.5),
-                   0 0 10px rgba($neon-blue, 0.3) !important;
-    }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.cyberpunk-hero__panel {
+  background: rgba($darker-bg, 0.7);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border-radius: 0.75rem;
+  border: 1px solid rgba($neon-blue, 0.25);
+  box-shadow: 0 20px 45px rgba(#000, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.cyberpunk-hero__tagline {
+  color: $text-color;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px rgba($neon-blue, 0.35), 0 0 10px rgba($neon-blue, 0.2);
+}
+
+.cyberpunk-hero__headline {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  margin-bottom: 1.5rem;
+  color: $neon-blue;
+  text-shadow: 0 0 5px $neon-blue, 0 0 10px $neon-blue, 0 0 20px $neon-blue;
+}
+
+.site-hero-content-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
   }
 }
 
@@ -368,9 +398,15 @@ body, html {
   .feature-card {
     margin-bottom: 2rem;
   }
-  
-  .section {
+
+  .section,
+  .site-sections,
+  .cyberpunk-section {
     padding: 3rem 0;
+  }
+
+  .cyberpunk-hero__headline {
+    font-size: 2.25rem;
   }
 }
 

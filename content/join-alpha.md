@@ -1,14 +1,14 @@
 ---
 title: "Join the Alpha"
-description: "Be Among the First to Experience Nexus"
+description: "Be Among the First to Experience Conducio"
 ---
 
-## Join the Nexus Alpha
+## Join the Conducio Alpha
 
 Be among the first to experience the future of personal AI. Our alpha program is limited to ensure we can provide the best possible experience and gather valuable feedback.
 
 ### What You'll Get:
-- Early access to Nexus
+- Early access to Conducio
 - Direct input on feature development
 - Exclusive community access
 - Regular updates and improvements
@@ -23,7 +23,7 @@ Be among the first to experience the future of personal AI. Our alpha program is
 
 ## Join our info list
 
-Please fill out this quick form to stay tuned when Nexus launches!: [Form](https://form.jotform.com/251666115382053){target="_blank"}
+Please fill out this quick form to stay tuned when Conducio launches!: [Form](https://form.jotform.com/251666115382053){target="_blank"}
 
 Estimated launch: end of June 02025. (last updated: June 16, 02025)
 

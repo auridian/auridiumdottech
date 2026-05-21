@@ -1,16 +1,13 @@
 {{ with .Site.Params.banner }}
   {{ if .enable }}
   {{ "<!-- Site Hero Start -->" | safeHTML }}
-  <section class="site-hero cyberpunk-hero" style="position: relative; min-height: 100vh; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; background-image: url('{{ .background_image }}');">
-    <div style="content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(5,5,7,0.8), rgba(5,5,7,0.6));"></div>
-    <div class="container" style="position: relative; z-index: 2;">
+  <section class="site-hero cyberpunk-hero" style="--hero-bg: url('{{ .background_image }}');">
+    <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <div class="site-hero-content text-center" style="background: rgba(5,5,7,0.7); padding: 3rem; border-radius: 8px; border: 1px solid rgba(5,217,232,0.2); backdrop-filter: blur(10px);">
-            <h5 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 5px rgba(5,217,232,0.5), 0 0 10px rgba(5,217,232,0.3);">{{ .tagline }}</h5>
-            <h1 class="neon-text" style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: #05d9e8; text-shadow: 0 0 5px #05d9e8, 0 0 10px #05d9e8, 0 0 20px #05d9e8; line-height: 1.2; word-wrap: break-word; max-width: 100%;">
-              {{ .heading }}
-            </h1>
+          <div class="site-hero-content text-center cyberpunk-hero__panel">
+            <h5 class="cyberpunk-hero__tagline">{{ .tagline }}</h5>
+            <h1 class="neon-text cyberpunk-hero__headline">{{ .heading }}</h1>
             <ul class="site-hero-content-buttons">
               <li>
                 <a href="{{ .primary_button_url | absURL }}" class="btn btn-primary">

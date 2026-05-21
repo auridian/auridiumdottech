@@ -1,40 +1,17 @@
 ---
 title: "Who It's For"
-description: "Built for Those Who Think Different"
+description: "Welcome to the Era of the Sovereign"
 ---
 
-## Indie Hackers
-
-For those building the future, one project at a time. Nexus helps you focus on what matters most - creating value.
-
-### Perfect for:
-- **Solo Founders**: Automate routine tasks and focus on growth
-- **Bootstrappers**: Maximize productivity with minimal resources
-- **Product Builders**: Streamline development and testing workflows
-
-## Engineers
-
-Built by engineers, for engineers. Nexus understands your development environment and helps you code faster and better.
-
-### Ideal for:
-- **Full-Stack Developers**: Manage multiple projects efficiently
-- **DevOps Engineers**: Automate infrastructure and deployment
-- **System Architects**: Organize and document complex systems
-
-## The Weird Ones
-
-Nexus adapts to *your* way of thinking and interacting with the world. You steer the ship, no matter how you work - it will be there to help you in your own way. 
-
-### Features for:
-- **Task Management**: Visual and flexible organization systems
-- **Focus Mode**: Reduce cognitive load and maintain flow
-- **Customizable Interface**: Adapt the UI to your preferences
-
-## Why Nexus?
-
-- **Personalized Experience**: Adapts to your unique workflow
-- **Privacy-First**: Your data, your control
-- **Continuous Learning**: Gets better at helping you over time
-- **Community-Driven**: Built with feedback from real users
+## The Solopreneur and Indie Hacker
+- **Small business in a box**: Handle grunt work, digital infrastructure, and repeatable tasks. Focus on what makes your business unique. 
+- Outsource research, monitoring, and more.
+## The 1099 Contractor/Consultant
+- Sell your skills, handle queries and quotes and followups.
+## The Side Hustler
+- After the 9-5, accelerate the development of your 5-9 by creating agents to handle all the meta, research, and related tasks so you can concentrate your limited time on the most interesting and nuanced parts. 
+## YOU
+- There is a deluge of information in the world. Conducio will help you stay on top of it, so you can spend more time in the real world and less time on hold or responding to emails.
+- Never lose tendrils of opportunity again!
 
 Ready to join a community of innovative thinkers? [Join the Alpha](/join-alpha) and be part of the future! 
