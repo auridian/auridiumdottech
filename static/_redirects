@@ -1,0 +1,11 @@
+/capabilities/ /services/ 301
+/projects/ /work/ 301
+/work-with-us/ /contact/ 301
+/how-it-works/ /products/conducio/ 301
+/roadmap/ /products/conducio/ 301
+/join-alpha/ /products/conducio/ 301
+/who-its-for/ /products/conducio/ 301
+/blog/* /work/ 301
+/portfolio/* /work/ 301
+/categories/* /work/ 301
+/tags/* /work/ 301

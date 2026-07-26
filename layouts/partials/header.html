@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="/" aria-label="Auridium Technologies home">
+      <img src="/logo-96.png" width="48" height="48" alt="">
+      <span>Auridium Technologies</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      <a class="button button-small" href="/contact/">Describe the bottleneck</a>
+    </nav>
+  </div>
+</header>

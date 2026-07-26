@@ -1,7 +1,99 @@
 {{ define "main" }}
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <p class="eyebrow">Systems engineering for owner-operated businesses and technical teams</p>
+      <h1>Turn operational chaos into working systems.</h1>
+      <p class="lede">Auridium designs and builds automation, dashboards, AI workflows, web platforms, and engineering tools that connect fragmented data, processes, and people.</p>
+      <div class="hero-actions">
+        <a class="button" href="/contact/">Describe the bottleneck</a>
+        <a class="button button-secondary" href="/work/">See selected work</a>
+      </div>
+      <p class="proof-line">Founder-led · Software, AI, and physical systems · Manchester, New Hampshire</p>
+    </div>
+    <div class="system-map" aria-label="A simple system map connecting people, tools, data, and physical operations">
+      <svg viewBox="0 0 520 440" role="img" aria-labelledby="system-map-title system-map-desc">
+        <title id="system-map-title">One operational layer connecting a fragmented business</title>
+        <desc id="system-map-desc">People, tools, data, and machines connect through a central operational system.</desc>
+        <g fill="none" stroke="#7f898e" stroke-width="2"><path d="M130 95 L260 220 L390 95"/><path d="M130 345 L260 220 L390 345"/></g>
+        <g fill="#2b3033" stroke="#d5c9b8" stroke-width="2"><rect x="55" y="55" width="150" height="78" rx="4"/><rect x="315" y="55" width="150" height="78" rx="4"/><rect x="55" y="307" width="150" height="78" rx="4"/><rect x="315" y="307" width="150" height="78" rx="4"/></g>
+        <circle cx="260" cy="220" r="92" fill="#a85f27"/>
+        <g fill="#f6f2ea" font-family="ui-monospace, monospace" font-size="17" text-anchor="middle"><text x="130" y="101">PEOPLE</text><text x="390" y="101">TOOLS</text><text x="130" y="353">DATA</text><text x="390" y="353">MACHINES</text><text x="260" y="210">WORKING</text><text x="260" y="235">SYSTEM</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
 
-{{ partial "hero.html" . }}
+<section class="section section-muted" aria-labelledby="pain-heading">
+  <div class="shell">
+    <div class="section-heading">
+      <p class="eyebrow">Recognizable operating problems</p>
+      <h2 id="pain-heading">When the business grows faster than its systems</h2>
+      <p>Work gets dropped between inboxes, spreadsheets, employees, and contractors. Auridium maps the operating path, stabilizes the foundation, and builds the missing layer.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><h3>Work falls through the cracks</h3><p>Requests arrive through email, text, calls, forms, and conversations without dependable ownership.</p></article>
+      <article class="card"><h3>Data does not agree</h3><p>Important records exist, but they do not connect or produce reliable answers.</p></article>
+      <article class="card"><h3>People repeat manual work</h3><p>Staff copy information, send follow-ups, assemble reports, and reconcile systems by hand.</p></article>
+      <article class="card"><h3>Critical software is fragile</h3><p>A portal or workflow depends on undocumented code, shared credentials, or one person's memory.</p></article>
+      <article class="card"><h3>Leadership lacks a command view</h3><p>The operator cannot quickly see what needs attention, who owns it, or what is falling behind.</p></article>
+    </div>
+  </div>
+</section>
 
-{{ partial "sections-nav.html" . }}
+<section class="section" aria-labelledby="services-heading">
+  <div class="shell">
+    <div class="section-heading"><p class="eyebrow">What Auridium does</p><h2 id="services-heading">Technical ownership across the whole operating path</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Systems reconnaissance and rescue</h3><p>Understand, stabilize, and regain ownership of inherited or fragile systems.</p><a href="/services/#reconnaissance">See the service</a></article>
+      <article class="card"><h3>Workflow automation and integration</h3><p>Move information and work between the right tools, people, and approvals.</p><a href="/services/#automation">See the service</a></article>
+      <article class="card"><h3>Operational software and dashboards</h3><p>Create one useful command layer for status, ownership, search, and action.</p><a href="/services/#software">See the service</a></article>
+      <article class="card"><h3>Private AI and knowledge systems</h3><p>Connect retrieval, context, tools, and human review to a real workflow.</p><a href="/services/#ai-systems">See the service</a></article>
+      <article class="card"><h3>Engineering and physical-system integration</h3><p>Bridge software, machines, instrumentation, prototypes, and human operations.</p><a href="/services/#engineering">See the service</a></article>
+    </div>
+  </div>
+</section>
 
-{{ end }} 
+<section class="section section-dark" aria-labelledby="decision-heading">
+  <div class="shell">
+    <div class="section-heading"><p class="eyebrow">Decision philosophy</p><h2 id="decision-heading">Custom where it matters. Standard where it works.</h2></div>
+    <div class="grid">
+      <article class="card"><span class="step-number">01 / BUY</span><h3>Use proven software</h3><p>Choose an existing product when it already solves the problem well.</p></article>
+      <article class="card"><span class="step-number">02 / CONFIGURE</span><h3>Adapt it to the operation</h3><p>Fit tools to the real workflow instead of forcing the business into defaults.</p></article>
+      <article class="card"><span class="step-number">03 / INTEGRATE</span><h3>Connect the handoffs</h3><p>Join data, systems, people, and approvals so work moves cleanly.</p></article>
+      <article class="card"><span class="step-number">04 / BUILD</span><h3>Create the unique layer</h3><p>Build custom capability only where the business is genuinely different.</p></article>
+    </div>
+    <p class="lede">The goal is the simplest durable system, not the largest codebase.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="work-heading">
+  <div class="shell">
+    <div class="section-heading"><p class="eyebrow">Selected work</p><h2 id="work-heading">Systems built around real constraints</h2></div>
+    <div class="grid">
+      <article class="work-card"><div><span class="status">Live</span><h3>Granite Docket</h3><p>A unified platform for New Hampshire bills, legislators, calendars, hearings, and related public information.</p></div><a href="/work/granite-docket/">View case study</a></article>
+      <article class="work-card"><div><span class="status status-development">Early access · Active development</span><h3>Conducio</h3><p>A private AI substrate for memory, tool integration, workflow orchestration, and externally supported executive function.</p></div><a href="/products/conducio/">Explore Conducio</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted" aria-labelledby="engagement-heading">
+  <div class="shell">
+    <div class="section-heading"><p class="eyebrow">Engagement ladder</p><h2 id="engagement-heading">Start with a bounded problem</h2></div>
+    <div class="grid engagements">
+      <article class="card"><h3>Systems Review</h3><p>Map the operation, identify immediate risks and inefficiencies, and define the implementation sequence.</p></article>
+      <article class="card"><h3>Focused Build Sprint</h3><p>Solve one operational problem with a working deliverable and clear acceptance criteria.</p></article>
+      <article class="card"><h3>Ongoing Systems Ownership</h3><p>Continue modernization, automation, support, and expansion without immediately hiring a full internal team.</p></article>
+    </div>
+    <p><a class="button" href="/contact/">Discuss the first step</a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="founder-heading">
+  <div class="shell split">
+    <div><p class="eyebrow">Founder-led</p><h2 id="founder-heading">Work directly with the person designing the system</h2></div>
+    <div><p>Auridium is led by Milo Hooper, a mechanical engineer and software builder whose work spans startups, physical-product development, automation, civic technology, web infrastructure, and private AI systems.</p><p>That range matters because operational problems rarely stay inside one category.</p><a href="/about/">About Milo and Auridium</a></div>
+  </div>
+</section>
+{{ partial "cta.html" . }}
+{{ end }}

@@ -1,79 +1,77 @@
 <head>
-  <meta charset="utf-8" />
-  <title>{{ .Title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- $description := .Params.description | default .Site.Params.description -}}
+  {{- $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) -}}
+  {{- with .Params.metaTitle }}{{ $title = . }}{{ end -}}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  {{ with .Site.Params.author }}
-  <meta name="author" content="{{ . }}">
+  <meta property="og:type" content="{{ if eq .Section "work" }}article{{ else }}website{{ end }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ .Site.Params.socialImage | absURL }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="{{ .Site.Params.socialImage | absURL }}">
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  {{ $style := resources.Get "css/site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "{{ .Site.BaseURL }}#organization",
+        "name": "Auridium Technologies",
+        "url": "{{ .Site.BaseURL }}",
+        "logo": "{{ .Site.Params.logo | absURL }}",
+        "email": "{{ .Site.Params.email }}",
+        "description": "{{ .Site.Params.description }}",
+        "founder": {"@id": "{{ .Site.BaseURL }}about/#milo-hooper"},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Manchester",
+          "addressRegion": "NH",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ .Site.BaseURL }}about/#milo-hooper",
+        "name": "Milo Hooper",
+        "jobTitle": "Founder and systems engineer",
+        "worksFor": {"@id": "{{ .Site.BaseURL }}#organization"},
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Manchester, New Hampshire"
+        }
+      }
+    ]
+  }
+  </script>
+  {{ if and (eq .Section "work") (not .IsSection) }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "{{ .Title }}",
+    "description": "{{ $description }}",
+    "url": "{{ .Permalink }}",
+    "creator": {"@id": "{{ .Site.BaseURL }}#organization"}
+  }
+  </script>
   {{ end }}
-  {{ hugo.Generator }}
-
-  <!-- Critical CSS to ensure immediate styling -->
-  <style>
-    body, html {
-      background-color: #0b0f12 !important;
-      color: #ffffff !important;
-      font-family: 'Montserrat', sans-serif !important;
-    }
-    
-    .neon-text {
-      text-shadow: 0 0 14px rgba(56, 215, 255, 0.28);
-      color: #d7f8ff;
-    }
-    
-    .section-card {
-      display: block !important;
-      background: rgba(16,23,29,0.88) !important;
-      border: 1px solid rgba(142,164,184,0.2) !important;
-      border-radius: 2px !important;
-      padding: 2rem !important;
-      margin-bottom: 2rem !important;
-      transition: all 0.3s ease !important;
-      text-decoration: none !important;
-    }
-    
-    .section-card:hover {
-      transform: translateY(-5px) !important;
-      border-color: #f4b860 !important;
-      box-shadow: 0 24px 50px rgba(0,0,0,0.32) !important;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, #f4b860, #f06f45) !important;
-      border: none !important;
-      color: #ffffff !important;
-    }
-    
-    .btn-secondary {
-      background: transparent !important;
-      border: 2px solid rgba(56,215,255,0.72) !important;
-      color: #d7f8ff !important;
-    }
-  </style>
-
-  {{ "<!-- Bootstrap -->" | safeHTML }}
-  {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
-  <link rel="stylesheet" href="{{ $bootstrap.Permalink }}" />
-  {{ "<!-- font-awesome -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "font-awesome/css/font-awesome.min.css" | absURL }}" />
-  
-  {{ "<!-- Google Fonts -->" | safeHTML }}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  {{ "<!-- Main Stylesheets -->" | safeHTML }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
-  <link href="{{ $style.Permalink }}" rel="stylesheet" />
-
-  {{ range .Site.Params.custom_stylesheets -}}
-    {{ $style := resources.Get . | resources.ToCSS | minify }}
-    <link href="{{ $style.Permalink }}" rel="stylesheet" />
-  {{- end }}
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="{{ .Site.Params.favicon_shortcut_icon | absURL }}" type="image/x-icon" />
-  <link rel="icon" href="{{ .Site.Params.favicon_icon | absURL }}" type="image/x-icon" />
-</head> 
+</head>

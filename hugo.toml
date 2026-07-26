@@ -1,141 +1,46 @@
-baseURL       = "https://auridium.tech/"
-languageCode  = "en-us"
-title         = "Auridium Technologies"
-theme         = "roxo-hugo-custom-local"
-summarylength = 25
+baseURL = "https://auridium.tech/"
+languageCode = "en-us"
+title = "Auridium Technologies"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
 
-# Site Menus
-[menu]
-  # Navbar Menus
-  [[menu.nav]]
-    name    = "Home"
-    url     = ""
-    weight  = 1
-  [[menu.nav]]
-    name    = "Capabilities"
-    url     = "capabilities"
-    weight  = 2
-  [[menu.nav]]
-    name    = "Projects"
-    url     = "projects"
-    weight  = 3
-  [[menu.nav]]
-    name    = "About"
-    url     = "about"
-    weight  = 4
-  [[menu.nav]]
-    name    = "Work With Us"
-    url     = "work-with-us"
-    weight  = 5
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
-# Site Params
 [params]
-  logo = "images/logo_roughcrop.jpg"
-  logo_footer = "images/thumb.logo.jpg"
-  favicon_icon = "images/favicon.ico"
-  favicon_shortcut_icon = "images/favicon.png"
-  custom_stylesheets = ["scss/custom.scss"]
-  dateFormat = "26 FEB 1994"
-  # Meta data
-  description = "Auridium Technologies builds practical AI systems, automation infrastructure, websites, and bespoke technical tools for independent operators, startups, and small businesses."
+  description = "Founder-led systems engineering for owner-operated businesses and technical teams. Automation, dashboards, AI workflows, web platforms, and cross-domain technical integration."
   author = "Auridium Technologies LLC"
-  # Google Analitycs
-  googleAnalitycsID = "Your ID"
+  logo = "icon-512.png"
+  socialImage = "images/auridium-social.png"
+  email = "hello@auridium.tech"
+  location = "Manchester, New Hampshire"
+  tallyFormId = "7RgBB2"
 
-  # Navbar Action Button
-  [params.navAction]
-    status  = true
-    name    = "Work With Us"
-    url     = "work-with-us"
+[menu]
+  [[menu.main]]
+    name = "Services"
+    pageRef = "/services"
+    weight = 10
+  [[menu.main]]
+    name = "Work"
+    pageRef = "/work"
+    weight = 20
+  [[menu.main]]
+    name = "Conducio"
+    pageRef = "/products/conducio"
+    weight = 30
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 40
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 50
 
-  # Banner Section
-  [params.banner]
-    enable                = true
-    background_image      = "images/backgrounds/cyberpunk-bg.jpg"
-    heading               = "Auridium Technologies"
-    tagline               = "We build AI systems, automation infrastructure, websites, and practical engineering tools for operators who have outgrown off-the-shelf software."
-    primary_button        = "Work With Us"
-    primary_button_url    = "work-with-us"
-    secondary_button      = "Explore Projects"
-    secondary_button_url  = "projects"
-
-  [params.features]
-    enable = true
-    title = "What We Build"
-    subtitle = "Everything Tech"
-    [[params.features.item]]
-      title = "Custom AI Systems"
-      description = "Workflow-aware assistants, retrieval systems, agents, and interfaces for your use cases."
-      icon = "microchip"
-    [[params.features.item]]
-      title = "Automation & Integration"
-      description = "Software, hardware, and process automation that connects tools, machines, data, and people."
-      icon = "cogs"
-    [[params.features.item]]
-      title = "Websites & Technical Infrastructure"
-      description = "Websites, dashboards, internal tools, and operational systems that keep your business moving."
-      icon = "terminal"
-
-  [params.audience]
-    enable = true
-    title = "Flagship Project"
-    subtitle = "Conducio is the first major expression of the broader Auridium thesis."
-    [[params.audience.item]]
-      title = "Conducio"
-      description = "A private AI platform for memory, workflow orchestration, agents, and integration with the world."
-      icon = "rocket"
-    [[params.audience.item]]
-      title = "Systems That Build Systems"
-      description = "Conducio is a custom framework we use to create, maintain, and coordinate additional tools and projects."
-      icon = "dashboard"
-    [[params.audience.item]]
-      title = "Sovereign Economic Agent Stack"
-      description = "Auridium is building toward tools that give individuals and small teams more autonomy, memory, and leverage."
-      icon = "lightbulb-o"
-
-  [params.roadmap]
-    enable = true
-    title = "Who We Help"
-    subtitle = "Founder-led, pragmatic, and comfortable with weird technical problems."
-    [[params.roadmap.item]]
-      title = "Small Businesses"
-      description = "Modernize operations, automate repetitive work, connect fragmented systems, and build useful web infrastructure."
-      icon = "building"
-    [[params.roadmap.item]]
-      title = "Startups & Independent Operators"
-      description = "Move from idea to working technical system without monthslong corporate process sprawl."
-      icon = "bolt"
-    [[params.roadmap.item]]
-      title = "Engineering-Heavy Teams"
-      description = "Prototype, integrate, and troubleshoot across software, AI, automation, and process-oriented technical systems."
-      icon = "wrench"
-
-  [params.footer]
-    params.footer.qr_print = false
-    [params.footer.contactInfo]
-      title   = "Contact Info"
-      email   = "hello(@)auridium.tech"
-    [params.footer.sitemap]
-      title   = "Sitemap"
-      [[params.footer.sitemap.link]]
-        name = "Capabilities"
-        url  = "capabilities"
-      [[params.footer.sitemap.link]]
-        name = "Projects"
-        url  = "projects"
-      [[params.footer.sitemap.link]]
-        name = "About"
-        url  = "about"
-      [[params.footer.sitemap.link]]
-        name = "Work With Us"
-        url  = "work-with-us"
-  #  [params.footer.social]
-  #    title   = "Connect With Us"
-  #    [[params.footer.social.link]]
-  #      name = "Discord"
-  #      url  = "https://discord.gg/auridium"
-  #    [[params.footer.social.link]]
-  #      name = "GitHub"
-  #      url  = "https://github.com/auridium"
-    [params.footer.back_to_top]
-      description = "back to top"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false

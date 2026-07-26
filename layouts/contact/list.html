@@ -1,0 +1,7 @@
+{{ define "main" }}
+<header class="page-hero"><div class="shell"><p class="eyebrow">Contact</p><h1>What is slow, manual, fragile, or unclear?</h1><p class="lede">Describe the bottleneck. Auridium will review the operating problem and respond with the most useful next step: a short conversation, a systems review, or a focused project scope.</p></div></header>
+<section class="section section-muted"><div class="shell contact-grid">
+  <aside class="contact-aside"><h2>Start with the problem</h2><p>You do not need a technical specification. Explain what you are trying to accomplish and where the work currently breaks down.</p><p><strong>Prefer email?</strong><br><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p><p class="form-note">The form is hosted by Tally and protected by Google reCAPTCHA. Read the <a href="/privacy/">privacy notice</a>.</p></aside>
+  <div><iframe class="tally-frame" title="Describe the bottleneck contact form" src="https://tally.so/embed/{{ .Site.Params.tallyFormId }}?alignLeft=1&hideTitle=1&transparentBackground=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="form-note">If the embedded form does not load, <a href="https://tally.so/r/{{ .Site.Params.tallyFormId }}">open it directly on Tally</a> or email <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>.</p></div>
+</div></section>
+{{ end }}
