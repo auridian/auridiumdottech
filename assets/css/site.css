@@ -369,6 +369,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.7rem); letter-spacing: -0.02em; }
 .current-future > section { padding: clamp(1.5rem, 4vw, 3rem); }
 .current-panel { background: #fffaf4; border: 1px solid var(--line); }
 .future-panel { background: var(--graphite); color: var(--paper); }
+.future-panel .eyebrow { color: var(--paper); }
 
 .contact-grid {
   display: grid;

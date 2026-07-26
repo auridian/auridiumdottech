@@ -1,6 +1,24 @@
 # Validation record
 
-Validated locally on July 25, 2026 with Hugo 0.121.1 and Lighthouse 13 using the mobile preset.
+Validated locally on July 26, 2026 with Hugo 0.121.1 and Lighthouse 12.8.2 using the mobile preset.
+
+## Public-copy audit
+
+Audited again on July 26, 2026 against every public route, the shared navigation/footer/CTA, the 404 page, and the current public Conducio tour.
+
+| Surface | Audit result |
+|---|---|
+| `/` | Changed only the direct Conducio summary and five ambiguous service links. |
+| `/services/` | Verified without copy changes; each service still states the situation, typical work, and outcome. |
+| `/work/` | Changed only the direct Conducio summary and link label. |
+| `/work/granite-docket/` | Verified without copy changes against the live product evidence already recorded. |
+| `/products/conducio/` | Rewritten around the currently demonstrated project-continuity and human-review loop; current and future claims remain separate. |
+| `/about/` | Replaced the vague final action label with the result it opens. |
+| `/contact/` | Verified without copy changes; the Tally form, direct-form fallback, email fallback, and privacy link remain explicit. |
+| `/privacy/` | Verified without copy changes against current Tally, reCAPTCHA, Proton, and Cloudflare behavior. |
+| 404 | Replaced self-referential system language with a direct explanation and specific recovery links. |
+
+The Conducio figure now uses a current real product screenshot at its true intrinsic size, with task-specific alternative text and a caption that explains the demonstrated result.
 
 ## Build and route inventory
 
@@ -23,8 +41,9 @@ The two future case studies remain `draft: true` and do not appear in the produc
 
 | Mobile page | Performance | Accessibility | Best Practices | SEO | LCP | TBT | CLS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Home | 98 | 100 | 100 | 100 | 2.3 s | 30 ms | 0 |
-| Contact | 100 | 100 | 100 | 100 | 1.5 s | 60 ms | 0 |
+| Home | 100 | 100 | 100 | 100 | 1.5 s | 0 ms | 0 |
+| Conducio | 99 | 100 | 100 | 100 | 2.0 s | 0 ms | 0 |
+| Contact | 100 | 100 | 100 | 100 | 1.4 s | 0 ms | 0 |
 
 The previous production baseline was 75 Performance, 79 Accessibility, 96 Best Practices, 92 SEO, and a 5.3-second LCP.
 
