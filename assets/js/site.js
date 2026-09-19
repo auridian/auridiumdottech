@@ -16,13 +16,17 @@
   });
 
   navigation.addEventListener("click", (event) => {
-    if (event.target instanceof HTMLAnchorElement) closeNavigation();
+    if (event.target instanceof Element && event.target.closest("a")) closeNavigation();
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
       closeNavigation();
       toggle.focus();
     }
+  });
+
+  window.matchMedia("(min-width: 801px)").addEventListener("change", (event) => {
+    if (event.matches) closeNavigation();
   });
 })();

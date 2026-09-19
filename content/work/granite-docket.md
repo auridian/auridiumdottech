@@ -1,7 +1,5 @@
 ---
 title: "Granite Docket"
-metaTitle: "Granite Docket | Legislative Intelligence Platform"
-description: "A unified platform for exploring New Hampshire legislation, legislators, hearings, calendars, and related public information."
-status: "Live"
-projectUrl: "https://granitedocket.com/"
+metaTitle: "Granite Docket | Auridium Technologies"
+description: "We combine machine-readable legislation with public records parsed from PDFs in one searchable New Hampshire site, used by legislators and political organizations."
 ---

@@ -1,20 +1,23 @@
 # Claims and evidence
 
-## Published with current evidence
+## Current owner-approved copy
 
-- **Granite Docket — Live.** Verified against the current public product. Published capabilities are limited to representative lookup, bills, legislators, committees, calendars, votes, elections, search, and navigation visible in that product.
-- **Conducio — Early access · Active development.** Current capability language is limited to the loop demonstrated in the current public tour: bring starting material into a project, retain useful context between sessions, move a draft, follow-up, or recurring result forward, and review it before use. Broader memory, tool connection, action, and executive-function ideas are labeled as development work or long-term direction.
-- **Founder-led background.** Uses the approved implementation brief: Milo Hooper, mechanical engineer, MIT background, Manchester, New Hampshire.
-- **Tally processing.** Uses the real Auridium-owned form ID and observed live settings. Free notifications currently target `forms@auridium.tech`; the public fallback remains `hello@auridium.tech`.
+The September 19 owner-provided revamp brief is the authority for the site's audience, engagement offer, founder biography, and current positioning of Conducio as internal infrastructure rather than a standalone product. These statements are owner-provided; implementation is not independent verification of the underlying business facts.
 
-## Operational checks completed
+The brief specifies fixed-price work, a credited paid review, 60 days of defect coverage, optional monthly support, ownership, and a one-business-day reply. The owner's follow-up specifies a review lasting one day to one week, with the fee agreed privately and no published amount. Monthly support scope and pricing vary by client and are agreed individually. The optional personal-copy placeholder is removed, and Partners is an unpublished draft while referral terms are undecided.
 
-- A corrected synthetic inquiry passed reCAPTCHA and appears as the one completed submission in Tally.
-- Proton received `New Tally Form Submission for Describe the bottleneck` from `notifications@tally.so` in the Auridium mailbox at 12:30 AM on July 26, 2026.
+## Granite Docket and client confidentiality
 
-## Production build contract
+The owner confirmed that Granite Docket is used by legislators and political organizations. The site makes no daily-use or sponsorship claim. The owner also clarified that legislation is machine-readable while many other records are parsed from PDFs; the Home, Work, and case-study descriptions reflect that distinction.
 
-- Cloudflare Pages production and preview builds use Hugo `0.121.1` with `hugo --cleanDestinationDir --panicOnWarning`.
-- Every release is verified against the exact Git commit shown by the production deployment.
+Client stories and their placeholders are omitted because the existing projects are under NDA. No client identities, results, endorsements, or adoption counts were invented.
 
-No user numbers, time savings, institutional adoption, sponsors, client endorsements, or performance claims are published.
+The owner confirmed `https://granitedocket.com/` as the public project URL. Screenshots were refreshed from the public product on September 19, 2026: `https://granitedocket.com/`, `https://granitedocket.com/bills?filter.sessionKey=2026`, and `https://granitedocket.com/calendar?filter.date=2026-09-23`. The date-stamped files in `static/images/work/` are unaltered browser captures. Conducio has no product screenshots in the current site.
+
+## Contact and privacy
+
+The site directs visitors to email for project inquiries or arranging a call. The owner explicitly chose email scheduling rather than an automatic booking service; the call action always opens an email request. The external Tally account and form were not changed, and the Privacy source file is unchanged. Earlier Tally submission and notification checks are historical; no new submission was made during this revamp.
+
+## Release status
+
+See `validation.md` for build, route, responsive, and redirect evidence. Production releases are tracked by Git commits and the Cloudflare Pages deployment history. This revamp changes the public site; it does not change customer data or external form settings.

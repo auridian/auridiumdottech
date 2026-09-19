@@ -1,8 +1,12 @@
 {{ define "main" }}
-<header class="page-hero"><div class="shell"><p class="eyebrow">Selected work</p><h1>Systems built around real constraints</h1><p class="lede">Auridium works on problems where data, tools, people, and physical reality do not line up cleanly. These projects show the operating problem, the constraints, the system built, and its current status.</p></div></header>
-<section class="section section-muted"><div class="shell grid">
-  <article class="work-card"><div><span class="status">Live</span><h2>Granite Docket</h2><p>A public interface for exploring New Hampshire bills, legislators, hearings, calendars, and related activity.</p></div><a href="/work/granite-docket/">View case study</a></article>
-  <article class="work-card"><div><span class="status status-development">Early access · Active development</span><h2>Conducio</h2><p>A workspace for keeping project context together, resuming work between sessions, and reviewing the next result.</p></div><a href="/products/conducio/">See how Conducio works</a></article>
-</div></section>
-{{ partial "cta.html" . }}
+<header class="page-hero"><div class="shell"><p class="eyebrow">Work</p><h1>What we've built</h1><p class="lede">A look at our public work. Our client projects stay private.</p></div></header>
+<section class="section work-section">
+  <div class="shell">
+    <article class="work-story">
+      <div class="story-heading"><p class="eyebrow">Live, public</p><h2>Granite Docket</h2><a class="work-image" href="/work/granite-docket/" aria-label="See the Granite Docket case study"><img src="/images/work/granite-docket-home-20260919.png" width="1425" height="950" loading="lazy" alt="Granite Docket homepage with search and public records from across government"></a></div>
+      <div class="story-copy"><h3>The problem</h3><p>New Hampshire's legislation is one of the few parts of the public record available as machine-readable data. Many other records are PDFs, spread across different government sites. Following an issue means finding and connecting those sources.</p><h3>What we built</h3><p>One searchable site combining structured legislative data with records parsed from PDFs. Bills, legislators, hearings, court decisions, budgets, and other public records are linked together.</p><h3>What changed</h3><p>Granite Docket is used by legislators and political organizations. People can search across government records and follow the connections without piecing everything together themselves.</p><div class="story-links"><a class="text-link" href="/work/granite-docket/">Case study <span aria-hidden="true">↗</span></a>{{ partial "granite-link.html" . }}</div></div>
+    </article>
+    <p class="section-closing">The platform that runs Granite Docket is ours, too. We built it so we could build faster for you.</p>
+  </div>
+</section>
 {{ end }}

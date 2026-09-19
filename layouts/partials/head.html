@@ -20,7 +20,6 @@
   <meta name="twitter:description" content="{{ $description }}">
   <meta name="twitter:image" content="{{ .Site.Params.socialImage | absURL }}">
 
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="icon" href="/icon-192.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -39,7 +38,8 @@
         "url": "{{ .Site.BaseURL }}",
         "logo": "{{ .Site.Params.logo | absURL }}",
         "email": "{{ .Site.Params.email }}",
-        "description": "{{ .Site.Params.description }}",
+        "description": "Automation and custom software for owner-operated businesses. Quoting, intake, follow-ups, scheduling, invoicing, and reporting turned into systems that run themselves. Fixed price.",
+        "areaServed": ["US", "New Hampshire", "Massachusetts", "Maine"],
         "founder": {"@id": "{{ .Site.BaseURL }}about/#milo-hooper"},
         "address": {
           "@type": "PostalAddress",
@@ -52,7 +52,7 @@
         "@type": "Person",
         "@id": "{{ .Site.BaseURL }}about/#milo-hooper",
         "name": "Milo Hooper",
-        "jobTitle": "Founder and systems engineer",
+        "jobTitle": "Founder",
         "worksFor": {"@id": "{{ .Site.BaseURL }}#organization"},
         "homeLocation": {
           "@type": "Place",

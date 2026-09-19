@@ -1,4 +1,5 @@
 ---
 title: "Work"
-description: "Selected software, AI, civic-technology, automation, and engineering systems built by Auridium Technologies."
+metaTitle: "Work | Auridium Technologies"
+description: "Automation, internal tools, and public software built by Auridium Technologies for businesses and the public."
 ---

@@ -1,10 +1,14 @@
 <section class="cta-band" aria-labelledby="cta-heading">
   <div class="shell cta-inner">
-    <div>
-      <p class="eyebrow">Start with the operating problem</p>
-      <h2 id="cta-heading">What is slow, manual, fragile, or unclear?</h2>
-      <p>Describe the bottleneck. Auridium will respond with the most useful next step.</p>
+    <h2 id="cta-heading">Ready <em>when you are.</em></h2>
+    <div class="cta-copy">
+      <p>A 30-minute call, no charge. Tell us what's slow. We'll tell you whether we can help.</p>
+      <a class="button" href="{{ partial "booking-url.html" . }}">Arrange a call <span aria-hidden="true">↗</span></a>
+      {{ if eq .Section "partners" }}
+      <p class="cta-email"><strong>For introductions, email <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> and cc your client, or just forward them this page.</strong></p>
+      {{ else }}
+      <p class="cta-email">Email <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> and we'll find a time.</p>
+      {{ end }}
     </div>
-    <a class="button" href="/contact/">Describe the bottleneck</a>
   </div>
 </section>

@@ -1,29 +1,14 @@
 <footer class="site-footer">
   <div class="shell footer-grid">
     <div>
-      <a class="brand footer-brand" href="/">
-        <img src="/logo-96.png" width="48" height="48" alt="">
-        <span>Auridium Technologies</span>
-      </a>
-      <p>Founder-led systems engineering for software, AI, automation, and physical systems.</p>
+      <a class="brand" href="/" aria-label="Auridium Technologies home"><img class="brand-logo" src="/logo-96.png" width="96" height="96" alt=""><span>Auridium<span class="brand-descriptor">Technologies</span></span></a>
+      <p>Automation and custom software for owner-operated businesses.</p>
+      <p>Manchester, New Hampshire · Clients anywhere</p>
     </div>
-    <nav aria-label="Footer navigation">
-      <h2 class="footer-heading">Explore</h2>
-      <ul>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/work/">Work</a></li>
-        <li><a href="/products/conducio/">Conducio</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-    <div>
-      <h2 class="footer-heading">Contact</h2>
-      <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ .Site.Params.location }}</p>
-      <p><a href="/privacy/">Privacy</a></p>
-    </div>
+    <nav aria-label="Footer navigation"><h2 class="footer-heading">Explore</h2><ul>
+      <li><a href="/how-we-work/">How we work</a></li><li><a href="/work/">Work</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy</a></li>
+    </ul></nav>
+    <div><h2 class="footer-heading">Get in touch</h2><p><a class="footer-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p><a href="{{ partial "booking-url.html" . }}">Arrange a call <span aria-hidden="true">↗</span></a></div>
   </div>
-  <div class="shell footer-bottom">
-    <p>© 0{{ now.Year }} Auridium Technologies LLC</p>
-    <a href="#main-content">Back to top</a>
-  </div>
+  <div class="shell footer-bottom"><p>© 0{{ now.Year }} Auridium Technologies LLC</p><a href="#main-content">Back to top ↑</a></div>
 </footer>

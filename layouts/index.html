@@ -1,99 +1,61 @@
 {{ define "main" }}
-<section class="hero">
-  <div class="shell hero-grid">
+<section class="home-hero shell" aria-labelledby="home-heading">
+  <p class="eyebrow">Automation and custom software for owner-operated businesses</p>
+  <div class="hero-layout">
+    <h1 id="home-heading">Your office runs on email, spreadsheets, and <em>one person who knows where everything is.</em></h1>
+    <div class="hero-intro">
+      <p>We fix that. Quoting, intake, follow-ups, scheduling, invoicing, reporting: the work someone at your company does by hand every week, turned into a system that does it for you. Fixed price, agreed up front.</p>
+      <div class="hero-actions"><a class="button" href="{{ partial "booking-url.html" . }}">Arrange a call <span aria-hidden="true">↗</span></a><a class="text-link" href="/work/">See what we've built <span aria-hidden="true">↗</span></a></div>
+      <p class="location">Based in Manchester, New Hampshire. Working with clients anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted" aria-labelledby="familiar-heading">
+  <div class="shell">
+    <div class="section-heading"><h2 id="familiar-heading">Sound familiar?</h2></div>
+    <div class="problem-grid">
+      <article><h3>Quotes take days.</h3><p>A request comes in by phone, gets written on whatever's nearby, and the estimate goes out when someone finds time. Meanwhile the customer has called two other companies.</p></article>
+      <article><h3>Tenant requests live in five places.</h3><p>Text, email, voicemail, a portal nobody checks, and a sticky note. Something always gets missed, and it's always the one that turns into a phone call.</p></article>
+      <article><h3>The books don't match the shop.</h3><p>Orders, inventory, and invoices get reconciled by hand every month, and the number is never quite right.</p></article>
+    </div>
+    <p class="section-closing">If someone at your company spends hours a week moving the same information between tools, that's the job we do.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="process-heading">
+  <div class="shell process-layout">
+    <div><p class="eyebrow">A clear next step</p><h2 id="process-heading">How it works</h2><a class="text-link" href="/how-we-work/">More about how we work <span aria-hidden="true">↗</span></a></div>
     <div>
-      <p class="eyebrow">Systems engineering for owner-operated businesses and technical teams</p>
-      <h1>Turn operational chaos into working systems.</h1>
-      <p class="lede">Auridium designs and builds automation, dashboards, AI workflows, web platforms, and engineering tools that connect fragmented data, processes, and people.</p>
-      <div class="hero-actions">
-        <a class="button" href="/contact/">Describe the bottleneck</a>
-        <a class="button button-secondary" href="/work/">See selected work</a>
-      </div>
-      <p class="proof-line">Founder-led · Software, AI, and physical systems · Manchester, New Hampshire</p>
-    </div>
-    <div class="system-map" aria-label="A simple system map connecting people, tools, data, and physical operations">
-      <svg viewBox="0 0 520 440" role="img" aria-labelledby="system-map-title system-map-desc">
-        <title id="system-map-title">One operational layer connecting a fragmented business</title>
-        <desc id="system-map-desc">People, tools, data, and machines connect through a central operational system.</desc>
-        <g fill="none" stroke="#7f898e" stroke-width="2"><path d="M130 95 L260 220 L390 95"/><path d="M130 345 L260 220 L390 345"/></g>
-        <g fill="#2b3033" stroke="#d5c9b8" stroke-width="2"><rect x="55" y="55" width="150" height="78" rx="4"/><rect x="315" y="55" width="150" height="78" rx="4"/><rect x="55" y="307" width="150" height="78" rx="4"/><rect x="315" y="307" width="150" height="78" rx="4"/></g>
-        <circle cx="260" cy="220" r="92" fill="#a85f27"/>
-        <g fill="#f6f2ea" font-family="ui-monospace, monospace" font-size="17" text-anchor="middle"><text x="130" y="101">PEOPLE</text><text x="390" y="101">TOOLS</text><text x="130" y="353">DATA</text><text x="390" y="353">MACHINES</text><text x="260" y="210">WORKING</text><text x="260" y="235">SYSTEM</text></g>
-      </svg>
+      <ol class="process-list">
+        <li><h3>A short call.</h3><p>Free, 30 minutes. You tell us what's slow. We tell you whether we can help, and if we can't, who might.</p></li>
+        <li><h3>A paid review.</h3><p>One day to one week, depending on the scope. We agree the fee with you first, then map the workflow and give you a written plan with a fixed-price quote for the first build. The review fee is credited toward it if you go ahead.</p></li>
+        <li><h3>A fixed-price build.</h3><p>Before work starts, we agree on what we'll deliver, how we'll check it works, and the price. You'll know exactly what you're getting.</p></li>
+        <li><h3>Coverage.</h3><p>For 60 days after handoff, anything we built that breaks, we fix. After that, optional monthly support, cancel anytime.</p></li>
+      </ol>
+      <p class="section-closing">We'll recommend existing software when it fits and build custom software when you need it. We'll explain the setup and ongoing costs so you can make an informed choice.</p>
     </div>
   </div>
 </section>
 
-<section class="section section-muted" aria-labelledby="pain-heading">
-  <div class="shell">
-    <div class="section-heading">
-      <p class="eyebrow">Recognizable operating problems</p>
-      <h2 id="pain-heading">When the business grows faster than its systems</h2>
-      <p>Work gets dropped between inboxes, spreadsheets, employees, and contractors. Auridium maps the operating path, stabilizes the foundation, and builds the missing layer.</p>
-    </div>
-    <div class="grid">
-      <article class="card"><h3>Work falls through the cracks</h3><p>Requests arrive through email, text, calls, forms, and conversations without dependable ownership.</p></article>
-      <article class="card"><h3>Data does not agree</h3><p>Important records exist, but they do not connect or produce reliable answers.</p></article>
-      <article class="card"><h3>People repeat manual work</h3><p>Staff copy information, send follow-ups, assemble reports, and reconcile systems by hand.</p></article>
-      <article class="card"><h3>Critical software is fragile</h3><p>A portal or workflow depends on undocumented code, shared credentials, or one person's memory.</p></article>
-      <article class="card"><h3>Leadership lacks a command view</h3><p>The operator cannot quickly see what needs attention, who owns it, or what is falling behind.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="services-heading">
-  <div class="shell">
-    <div class="section-heading"><p class="eyebrow">What Auridium does</p><h2 id="services-heading">Technical ownership across the whole operating path</h2></div>
-    <div class="grid">
-      <article class="card"><h3>Systems reconnaissance and rescue</h3><p>Understand, stabilize, and regain ownership of inherited or fragile systems.</p><a href="/services/#reconnaissance">See inherited-system rescue</a></article>
-      <article class="card"><h3>Workflow automation and integration</h3><p>Move information and work between the right tools, people, and approvals.</p><a href="/services/#automation">See workflow automation</a></article>
-      <article class="card"><h3>Operational software and dashboards</h3><p>Create one useful command layer for status, ownership, search, and action.</p><a href="/services/#software">See operational software</a></article>
-      <article class="card"><h3>Private AI and knowledge systems</h3><p>Connect retrieval, context, tools, and human review to a real workflow.</p><a href="/services/#ai-systems">See private AI systems</a></article>
-      <article class="card"><h3>Engineering and physical-system integration</h3><p>Bridge software, machines, instrumentation, prototypes, and human operations.</p><a href="/services/#engineering">See cross-domain engineering</a></article>
-    </div>
-  </div>
-</section>
-
-<section class="section section-dark" aria-labelledby="decision-heading">
-  <div class="shell">
-    <div class="section-heading"><p class="eyebrow">Decision philosophy</p><h2 id="decision-heading">Custom where it matters. Standard where it works.</h2></div>
-    <div class="grid">
-      <article class="card"><span class="step-number">01 / BUY</span><h3>Use proven software</h3><p>Choose an existing product when it already solves the problem well.</p></article>
-      <article class="card"><span class="step-number">02 / CONFIGURE</span><h3>Adapt it to the operation</h3><p>Fit tools to the real workflow instead of forcing the business into defaults.</p></article>
-      <article class="card"><span class="step-number">03 / INTEGRATE</span><h3>Connect the handoffs</h3><p>Join data, systems, people, and approvals so work moves cleanly.</p></article>
-      <article class="card"><span class="step-number">04 / BUILD</span><h3>Create the unique layer</h3><p>Build custom capability only where the business is genuinely different.</p></article>
-    </div>
-    <p class="lede">The goal is the simplest durable system, not the largest codebase.</p>
+<section class="section section-dark" aria-labelledby="ai-question">
+  <div class="shell split">
+    <h2 id="ai-question">“Can't I just do this with an AI subscription?”</h2>
+    <div class="answer-copy"><p class="lede">Sometimes, yes. If a weekend and a subscription gets you what you need, do that.</p><p>We're for when it has to keep working: when the data from two systems doesn't agree, when the vendor changes something, when the person who set it up leaves. We're accountable for what we build, and someone answers when it breaks.</p></div>
   </div>
 </section>
 
 <section class="section" aria-labelledby="work-heading">
   <div class="shell">
-    <div class="section-heading"><p class="eyebrow">Selected work</p><h2 id="work-heading">Systems built around real constraints</h2></div>
-    <div class="grid">
-      <article class="work-card"><div><span class="status">Live</span><h3>Granite Docket</h3><p>A unified platform for New Hampshire bills, legislators, calendars, hearings, and related public information.</p></div><a href="/work/granite-docket/">View case study</a></article>
-      <article class="work-card"><div><span class="status status-development">Early access · Active development</span><h3>Conducio</h3><p>A workspace for keeping project context together, resuming work between sessions, and reviewing the next result.</p></div><a href="/products/conducio/">See how Conducio works</a></article>
-    </div>
+    <div class="section-bar"><h2 id="work-heading">What we've built</h2><a class="text-link" href="/work/">All work <span aria-hidden="true">↗</span></a></div>
+    <article class="featured-work">
+      <a class="work-image" href="/work/granite-docket/" aria-label="See the Granite Docket case study"><img src="/images/work/granite-docket-home-20260919.png" width="1425" height="950" loading="lazy" alt="Granite Docket's current homepage with search, records across government, and upcoming meetings"></a>
+      <div><p class="eyebrow">Live, public</p><h3>Granite Docket</h3><p>New Hampshire's legislation is machine-readable. Much of the wider public record isn't. We combine structured data with records parsed from PDFs in one searchable site, used by legislators and political organizations.</p><a class="text-link" href="/work/granite-docket/">See the case study <span aria-hidden="true">↗</span></a></div>
+    </article>
   </div>
 </section>
 
-<section class="section section-muted" aria-labelledby="engagement-heading">
-  <div class="shell">
-    <div class="section-heading"><p class="eyebrow">Engagement ladder</p><h2 id="engagement-heading">Start with a bounded problem</h2></div>
-    <div class="grid engagements">
-      <article class="card"><h3>Systems Review</h3><p>Map the operation, identify immediate risks and inefficiencies, and define the implementation sequence.</p></article>
-      <article class="card"><h3>Focused Build Sprint</h3><p>Solve one operational problem with a working deliverable and clear acceptance criteria.</p></article>
-      <article class="card"><h3>Ongoing Systems Ownership</h3><p>Continue modernization, automation, support, and expansion without immediately hiring a full internal team.</p></article>
-    </div>
-    <p><a class="button" href="/contact/">Discuss the first step</a></p>
-  </div>
+<section class="section section-muted" aria-labelledby="founder-heading">
+  <div class="shell split"><h2 id="founder-heading">Who you're working with</h2><div><p>Auridium is led by Milo Hooper, whose work spans software development, mechanical engineering, and manufacturing automation. You'll work directly with him from the first conversation through delivery.</p><a class="text-link" href="/about/">About <span aria-hidden="true">↗</span></a></div></div>
 </section>
-
-<section class="section" aria-labelledby="founder-heading">
-  <div class="shell split">
-    <div><p class="eyebrow">Founder-led</p><h2 id="founder-heading">Work directly with the person designing the system</h2></div>
-    <div><p>Auridium is led by Milo Hooper, a mechanical engineer and software builder whose work spans startups, physical-product development, automation, civic technology, web infrastructure, and private AI systems.</p><p>That range matters because operational problems rarely stay inside one category.</p><a href="/about/">About Milo and Auridium</a></div>
-  </div>
-</section>
-{{ partial "cta.html" . }}
 {{ end }}

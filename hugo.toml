@@ -10,35 +10,32 @@ disableKinds = ["taxonomy", "term", "RSS"]
   filename = "sitemap.xml"
 
 [params]
-  description = "Founder-led systems engineering for owner-operated businesses and technical teams. Automation, dashboards, AI workflows, web platforms, and cross-domain technical integration."
+  description = "We automate the office work small businesses still do by hand: quoting, intake, follow-ups, scheduling, invoicing, reporting. Fixed price. Based in New Hampshire, working with clients anywhere."
   author = "Auridium Technologies LLC"
   logo = "icon-512.png"
   socialImage = "images/auridium-social.png"
   email = "hello@auridium.tech"
   location = "Manchester, New Hampshire"
-  tallyFormId = "7RgBB2"
+  graniteDocketURL = "https://granitedocket.com/"
+  tallyFormId = "7RgBB2" # Retained for the existing form and privacy notice.
 
 [menu]
   [[menu.main]]
-    name = "Services"
-    pageRef = "/services"
+    name = "How we work"
+    pageRef = "/how-we-work"
     weight = 10
   [[menu.main]]
     name = "Work"
     pageRef = "/work"
     weight = 20
   [[menu.main]]
-    name = "Conducio"
-    pageRef = "/products/conducio"
-    weight = 30
-  [[menu.main]]
     name = "About"
     pageRef = "/about"
-    weight = 40
+    weight = 30
   [[menu.main]]
     name = "Contact"
     pageRef = "/contact"
-    weight = 50
+    weight = 40
 
 [markup]
   [markup.goldmark]

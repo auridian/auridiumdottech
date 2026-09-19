@@ -1,0 +1,6 @@
+{{ define "main" }}
+<header class="page-hero">
+  <div class="shell"><p class="eyebrow">{{ .Title }}</p><h1>{{ .Params.heading | default .Title }}</h1>{{ with .Params.intro }}<p class="lede">{{ . }}</p>{{ end }}</div>
+</header>
+<section class="section prose-section"><div class="shell page-body">{{ .Content }}</div></section>
+{{ end }}
