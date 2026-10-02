@@ -148,3 +148,15 @@ Validation: clean production build and whitespace check passed. All nine rendere
 ## September 19, 2026 — release preparation
 
 The owner authorized commit, push, and deployment. Before committing, refreshed `origin/master` and confirmed the checkout matched `835d43499250a227de95c4db029858fb1eadfcf8`. Cloudflare Pages project `auridiumdottech` serves `auridium.tech` from the repository's `master` branch; its latest production deployment was the same baseline, with no release running. The clean production build and whitespace check passed again. Original logo assets and Privacy content remain unchanged. Publishing uses the existing Git integration; production success and live behavior must be verified after the push.
+
+## October 2, 2026 — project screenshot refresh
+
+Replaced all three published product screenshots with unaltered captures of the current live Granite Docket interface, taken at 1425×950 in the America/New_York time zone:
+
+- Homepage: `https://granitedocket.com/`, showing public-record search, representative lookup, and the House vote visualization.
+- Bills: `https://granitedocket.com/bills`, showing the 2026 outcome grid, search filters, and legislative results.
+- Calendar: `https://granitedocket.com/calendar?filter.date=2026-10-08`, showing the upcoming October 8 agenda with hearings and rule comment deadlines.
+
+Updated the homepage, Work page, and case study to use the new `20261002` filenames. Alternative text and captions match the captured interfaces. PNG compression is lossless; image dimensions remain 1425×950. The September 19 product images were removed.
+
+Focused local proof: clean production Hugo build with warnings treated as failures; Git whitespace check; all three affected routes at 320, 390, and 1440 pixels (nine checks), with no horizontal overflow. Every screenshot loaded with the expected intrinsic dimensions, aspect ratio, alternative text, and exact source-file bytes. No affected page references the old images. Visually inspected the desktop case-study cover and gallery and the mobile cover. Publishing uses the existing Cloudflare Pages integration from `master`.
